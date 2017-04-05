@@ -11,18 +11,18 @@ public class SetlistApi {
     }
 
     public VenueDto[] getVenues(String str) {
-
+        throw new UnsupportedOperationException();
     }
 
     public VenueDto[] getVenues(String str, int i){
-
+        throw new UnsupportedOperationException();
     }
 
     public EventDto[] getEvents(String str){
-
+        throw new UnsupportedOperationException();
     }
 
     public EventDto[] getEvents(String str, int i){
-
+        throw new UnsupportedOperationException();
     }
 }

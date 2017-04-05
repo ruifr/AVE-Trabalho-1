@@ -12,10 +12,10 @@ public class LastfmApi {
     }
 
     public ArtistDto getArtistInfo(String ai) {
-
+        throw new UnsupportedOperationException();
     }
 
     public TrackDto getTrackInfo(String str1, String str2) {
-
+        throw new UnsupportedOperationException();
     }
 }
