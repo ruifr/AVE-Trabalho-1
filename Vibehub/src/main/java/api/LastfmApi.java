@@ -2,6 +2,7 @@ package api;
 
 import api.dto.ArtistDto;
 import api.dto.TrackDto;
+import model.IRequest;
 
 public class LastfmApi {
     public LastfmApi(IRequest req) {

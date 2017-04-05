@@ -1,9 +1,6 @@
 import api.LastfmApi;
 import api.SetlistApi;
-import model.Artist;
-import model.Event;
-import model.Track;
-import model.Venue;
+import model.*;
 
 public class VibeService {
 
