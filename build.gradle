@@ -16,10 +16,11 @@ repositories {
     jcenter()
 }
 
-// In this section you declare the dependencies for your production and test code
+// In this section you declare the dependencies for your productions and test code
 dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
 
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    //testImplementation 'junit:junit:4.12'
+    compile group: 'junit', name: 'junit', version: '4.12'
 }

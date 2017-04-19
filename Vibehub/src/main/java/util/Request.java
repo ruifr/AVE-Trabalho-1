@@ -17,7 +17,7 @@ public class Request implements IRequest {
 
     @Override
     public final Iterable<String> getContent(String path) {
-        return null;//() -> new IteratorFromReader(getStream.apply(path));
+        return () -> new IteratorFromReader(getStream.apply(path));
     }
 
 }

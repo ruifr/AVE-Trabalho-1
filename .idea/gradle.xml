@@ -13,19 +13,6 @@
           </set>
         </option>
       </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../TPC" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/../mpd-2017-i41d" />
-            <option value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-            <option value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-            <option value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-          </set>
-        </option>
-      </GradleProjectSettings>
     </option>
   </component>
 </project>

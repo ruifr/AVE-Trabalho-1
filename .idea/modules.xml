@@ -3,16 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1.iml" filepath="$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_main.iml" group="app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_test.iml" group="app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aula01/aula01.iml" filepath="$PROJECT_DIR$/.idea/modules/aula01/aula01.iml" group="aula01" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aula01/aula01_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aula01/aula01_main.iml" group="aula01" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aula01/aula01_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aula01/aula01_test.iml" group="aula01" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aula13-json/aula13-json.iml" filepath="$PROJECT_DIR$/.idea/modules/aula13-json/aula13-json.iml" group="aula13-json" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aula13-json/aula13-json_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aula13-json/aula13-json_main.iml" group="aula13-json" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aula13-json/aula13-json_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aula13-json/aula13-json_test.iml" group="aula13-json" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mpd-2017-i41d.iml" filepath="$PROJECT_DIR$/.idea/modules/mpd-2017-i41d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1_main.iml" group="MPD-Trabalho-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1_test.iml" group="MPD-Trabalho-1" />
     </modules>
   </component>
 </project>

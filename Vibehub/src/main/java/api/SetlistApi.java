@@ -1,9 +1,10 @@
 package api;
 
-import api.dto.VenueDtoDeserializer;
 import com.google.gson.Gson;
 import api.dto.EventDto;
+import api.dto.EventDto.*;
 import api.dto.VenueDto;
+import api.dto.VenueDto.*;
 import com.google.gson.GsonBuilder;
 import util.IRequest;
 
@@ -14,22 +15,22 @@ public class SetlistApi {
     private static final String SETLIST_EVENTS="/rest/0.1/venue/%s/setlists.json";
 
     private final IRequest req;
-    private final Gson gson;
+    private Gson gson;
 
     public SetlistApi(IRequest req) {
         this.req = req;
         GsonBuilder gb = new GsonBuilder();
-        gb.registerTypeAdapter(VenueDto.class, new VenueDtoDeserializer());
+        gb.registerTypeAdapter(VenueDto[].class, new VenueDtoDeserializer());
+        gb.registerTypeAdapter(EventDto[].class, new EventDtoDeserializer());
         gson = gb.create();
     }
 
     public VenueDto[] getVenues(String str) {
-        str = "london";
         String path = SETLIST_HOST + SETLIST_VENUES + SETLIST_VENUES_ARGS;
         String url = String.format(path, str);
         Iterable<String> content = () -> req.getContent(url).iterator();
-        VenueDtoDeserializer cvdto = gson.fromJson(join(content), VenueDtoDeserializer.class);
-        return null;
+        VenueDto[] vdto = gson.fromJson(join(content), VenueDto[].class);
+        return vdto;
     }
 
     public VenueDto[] getVenues(String str, int i){
@@ -37,7 +38,11 @@ public class SetlistApi {
     }
 
     public EventDto[] getEvents(String str){
-        throw new UnsupportedOperationException();
+        String path = SETLIST_HOST + SETLIST_EVENTS;
+        String url = String.format(path, str);
+        Iterable<String> content = () -> req.getContent(url).iterator();
+        EventDto[] edto = gson.fromJson(join(content), EventDto[].class);
+        return edto;
     }
 
     public EventDto[] getEvents(String str, int i){

@@ -1,8 +1,9 @@
 import api.dto.VenueDto;
-import api.dto.VenueDtoDeserializer;
+import api.dto.VenueDto.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.junit.Test;
+import util.HttpRequest;
 import util.IRequest;
 
 import static api.SetlistApi.join;
@@ -18,14 +19,15 @@ public class GsonTest {
 
     @Test
     public void test() {
-
         GsonBuilder gb = new GsonBuilder();
         gb.registerTypeAdapter(VenueDto.class, new VenueDtoDeserializer());
         gson = gb.create();
-        String str = "london";
+
+        req = new HttpRequest();
         String path = SETLIST_HOST + SETLIST_VENUES + SETLIST_VENUES_ARGS;
-        String url = String.format(path, str);
+        String url = String.format(path, "london");
         Iterable<String> content = () -> req.getContent(url).iterator();
-        VenueDtoDeserializer cvdto = gson.fromJson(join(content), VenueDtoDeserializer.class);
+        String res = join(content);
+        VenueDto cvdto = gson.fromJson(res, VenueDto.class);
     }
 }
