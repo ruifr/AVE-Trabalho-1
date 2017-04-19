@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../TPC" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../TPC" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../mpd-2017-i41d" />
+            <option value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
+            <option value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
+            <option value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

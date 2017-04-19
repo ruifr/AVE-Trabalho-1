@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package model;
+package util;
 
 import java.io.BufferedReader;
 import java.io.IOException;

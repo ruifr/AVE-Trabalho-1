@@ -1,6 +1,7 @@
 import api.LastfmApi;
 import api.SetlistApi;
 import model.*;
+import util.IRequest;
 
 public class VibeService {
 

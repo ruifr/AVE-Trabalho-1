@@ -2,9 +2,12 @@ package api;
 
 import api.dto.ArtistDto;
 import api.dto.TrackDto;
-import model.IRequest;
+import util.IRequest;
 
 public class LastfmApi {
+
+    private static final String key = "1e36f8968af975f197cf0502a2cad082";
+
     public LastfmApi(IRequest req) {
     }
 
