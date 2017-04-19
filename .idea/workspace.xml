@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c3216ca-af49-4bf7-85cd-695617316490" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/MPD-Trabalho-1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/Vibehub.iml" afterPath="$PROJECT_DIR$/Vibehub.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/HttpRequest.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/HttpRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/IRequest.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/IRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/IteratorFromReader.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/IteratorFromReader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/Request.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/Request.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json/src/test/resources/search.ashx-query-Porto-format-json-key-2ec1272572f14053a83105313170" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json/src/test/resources/search.ashx-query-Porto-format-json-key-bee06298cb7740bb99c171740171903" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json/src/test/resources/search.ashx-query-Porto-format-tab-key-2ec1272572f14053a831053131709" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json/src/test/resources/search.ashx-query-Porto-format-tab-key-bee06298cb7740bb99c171740171903" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/gradle/wrapper/gradle-wrapper.properties" />
-    </list>
+    <list default="true" id="3c3216ca-af49-4bf7-85cd-695617316490" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/../mpd-2017-i41d/.gradle/" />
@@ -128,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDtoDeserializer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="20" />
+              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +109,7 @@
       <file leaf-file-name="SetlistApi.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="682">
               <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -159,7 +129,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -1368,6 +1338,156 @@
       <recent name="C:\Users\Marcos\Desktop\MPD\MPD-Trabalho-1" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/app/app.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/app/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/settings.gradle</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/aula16-cache.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Cache.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Countify.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/FileRequest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/HttpRequest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/ICounter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/IRequest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/IteratorFromReader.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Loggify.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Request.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/WeatherPredicate.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/EagerQueries.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorDistinct.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorFilter.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorMap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorSkip.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/LazyQueries.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/NaiveQueries.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/WeatherService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/WeatherServiceCache.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/WeatherWebApi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/LocationDto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/SearchDto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/SearchResultDto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/WeatherInfoDto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/model/Location.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/model/WeatherInfo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/EagerQueriesTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/LazyQueriesTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/NaiveQueriesTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/past-weather.ashx-q-41.15--8.6167-date-2017-02-01-enddate-2017-02-28</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/past-weather.ashx-q-41.15--8.617-date-2017-02-01-enddate-2017-02-28-</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/past-weather.ashx-q-41.15--8.617-date-2017-02-15-enddate-2017-03-15-</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/search.ashx-query-Porto-format-json-key-2ec1272572f14053a83105313170</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/search.ashx-query-Porto-format-tab-key-2ec1272572f14053a831053131709</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula13-json/aula13-json.iml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunManager" selected="JUnit.GsonTest">
     <configuration default="false" name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -1821,8 +1941,16 @@
       <workItem from="1492518838777" duration="1745000" />
       <workItem from="1492531056335" duration="1056000" />
       <workItem from="1492532193816" duration="4702000" />
-      <workItem from="1492555081961" duration="3868000" />
+      <workItem from="1492555081961" duration="4024000" />
     </task>
+    <task id="LOCAL-00001" summary="..">
+      <created>1492617281829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492617281829</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1840,11 +1968,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14924000" />
+    <option name="totallyTimeSpent" value="15080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1222" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1858,13 +1986,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39962122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39962122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285985" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919848" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1881,8 +2009,30 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2237,7 +2387,7 @@
     <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDtoDeserializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="20" />
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2264,7 +2414,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="682">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
