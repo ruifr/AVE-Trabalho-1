@@ -1,35 +1,46 @@
 package api.dto;
 
-import com.google.gson.*;
+import api.dto.deserializer.EventDtoDeserializer;
+import com.google.gson.JsonElement;
 import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
+import model.Track;
 
-import java.lang.reflect.Type;
-
+@JsonAdapter(EventDtoDeserializer.class)
 public class EventDto {
-    @SerializedName("@mbid")
+    private String setid;
     private String mbid;
-
-    @SerializedName("@eventDate")
     private String eventDate;
-
-    @SerializedName("@tour")
     private String tour;
+    private final JsonElement sets;
 
-    @SerializedName("@name")
-    private String trackName;
+    public EventDto(String setid, String mbid, String eventDate, String tour, JsonElement sets) {
+        this.setid = setid;
+        this.mbid = mbid;
+        this.eventDate = eventDate;
+        this.tour = tour;
+        this.sets = sets;
+    }
 
-    public static class EventDtoDeserializer implements JsonDeserializer<EventDto[]> {
-        @Override
-        public EventDto[] deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
-            JsonElement ja = json.getAsJsonObject().has().get("setlists").getAsJsonObject().get("setlist");
-            if(ja.isJsonObject()) return new EventDto[] { context.deserialize(ja.getAsJsonObject(), EventDto.class) };
-            EventDto[] ret = new EventDto[ja.getAsJsonArray().size()];
-            int i = 0;
-            for (JsonElement je: ja.getAsJsonArray()) {
-                ret[i++] = context.deserialize(je, EventDto.class);
-            }
-            return ret;
-        }
+    public String getMbid() {
+        return mbid;
+    }
+
+    public String getEventDate() {
+        return eventDate;
+    }
+
+    public String getTour() {
+        return tour;
+    }
+
+    public Track[] getTracks() {
+        return null;
+    }
+
+    public String getSetid() {
+        return setid;
+    }
+    public JsonElement getSets() {
+        return sets;
     }
 }
