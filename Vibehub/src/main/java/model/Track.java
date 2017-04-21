@@ -1,7 +1,6 @@
 package model;
 
 public class Track {
-
     private final String name;
     private final String artistName;
     private final String albumName;

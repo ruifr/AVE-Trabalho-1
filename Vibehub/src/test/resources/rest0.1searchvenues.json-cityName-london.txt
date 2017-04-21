@@ -1,0 +1,579 @@
+{
+ "venues":{
+  "@itemsPerPage":"30",
+  "@page":"1",
+  "@total":"2790",
+  "venue":[
+   {
+    "@id":"6bd79276",
+    "@name":"U.S. Embassy",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/us-embassy-london-england-6bd79276.html"
+   },
+   {
+    "@id":"7bd47a3c",
+    "@name":"The Fleadh",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/the-fleadh-london-england-7bd47a3c.html"
+   },
+   {
+    "@id":"2bd77816",
+    "@name":"2KHz at Church Studios",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/2khz-at-church-studios-london-england-2bd77816.html"
+   },
+   {
+    "@id":"5bd71398",
+    "@name":"Everything Must Go",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/everything-must-go-london-england-5bd71398.html"
+   },
+   {
+    "@id":"2bd4b042",
+    "@name":"Borders Bookshop, Charing Cross Road",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/borders-bookshop-charing-cross-road-london-england-2bd4b042.html"
+   },
+   {
+    "@id":"73d5bebd",
+    "@name":"Friday Night with Jonathan Ross",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/friday-night-with-jonathan-ross-london-england-73d5bebd.html"
+   },
+   {
+    "@id":"13d4899d",
+    "@name":"La Café des Artistes",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/la-cafe-des-artistes-london-england-13d4899d.html"
+   },
+   {
+    "@id":"bd48996",
+    "@name":"Syndrome, Oxford Street",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/syndrome-oxford-street-london-england-bd48996.html"
+   },
+   {
+    "@id":"3d4856b",
+    "@name":"College of Science",
+    "city":{
+     "@id":"2653265",
+     "@name":"Chelsea",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.4833333",
+      "@long":"-0.1833333"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/college-of-science-chelsea-england-3d4856b.html"
+   },
+   {
+    "@id":"3bd4e890",
+    "@name":"Club DaDa",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/club-dada-london-england-3bd4e890.html"
+   },
+   {
+    "@id":"bd4dd72",
+    "@name":"Grenada Theatre, Woolwich",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/grenada-theatre-woolwich-london-england-bd4dd72.html"
+   },
+   {
+    "@id":"bd4dd3e",
+    "@name":"Factory Club",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/factory-club-london-england-bd4dd3e.html"
+   },
+   {
+    "@id":"7bd4ee04",
+    "@name":"Life's A Pitch Studio",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/lifes-a-pitch-studio-london-england-7bd4ee04.html"
+   },
+   {
+    "@id":"13d4e165",
+    "@name":"Biba's",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/bibas-london-england-13d4e165.html"
+   },
+   {
+    "@id":"1bd4e150",
+    "@name":"The Cape Of Good Hope",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/the-cape-of-good-hope-london-england-1bd4e150.html"
+   },
+   {
+    "@id":"3bd4dcf4",
+    "@name":"St Paul's Cathedral",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/st-pauls-cathedral-london-england-3bd4dcf4.html"
+   },
+   {
+    "@id":"53d5a3e1",
+    "@name":"Greenwich Yacht Club",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/greenwich-yacht-club-london-england-53d5a3e1.html"
+   },
+   {
+    "@id":"53d5abb1",
+    "@name":"Five to Ten Show",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/five-to-ten-show-london-england-53d5abb1.html"
+   },
+   {
+    "@id":"43d5a73b",
+    "@name":"Brixton Top Rank",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/brixton-top-rank-london-england-43d5a73b.html"
+   },
+   {
+    "@id":"43d5a717",
+    "@name":"Kempton Park",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/kempton-park-london-england-43d5a717.html"
+   },
+   {
+    "@id":"5bd5a7f8",
+    "@name":"The Piccadilly Palace",
+    "city":{
+     "@id":"6058560",
+     "@name":"London",
+     "@state":"Ontario",
+     "@stateCode":"ON",
+     "coords":{
+      "@lat":"42.983389283",
+      "@long":"-81.233042387"
+     },
+     "country":{
+      "@code":"CA",
+      "@name":"Canada"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/the-piccadilly-palace-london-on-canada-5bd5a7f8.html"
+   },
+   {
+    "@id":"5bd5a7c4",
+    "@name":"Jackson's Lane Community Centre",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/jacksons-lane-community-centre-london-england-5bd5a7c4.html"
+   },
+   {
+    "@id":"4bd5a7b2",
+    "@name":"The Cavern, Willesden",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/the-cavern-willesden-london-england-4bd5a7b2.html"
+   },
+   {
+    "@id":"43d5a7b7",
+    "@name":"Last Bastion, Acton",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/last-bastion-acton-london-england-43d5a7b7.html"
+   },
+   {
+    "@id":"73d5a65d",
+    "@name":"Mayhem Studios",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/mayhem-studios-london-england-73d5a65d.html"
+   },
+   {
+    "@id":"6bd5a656",
+    "@name":"John Henry's PA Company, Rehearsal Studios",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/john-henrys-pa-company-rehearsal-studios-london-england-6bd5a656.html"
+   },
+   {
+    "@id":"63d5a6d7",
+    "@name":"Britain's Got More Talent",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/britains-got-more-talent-london-england-63d5a6d7.html"
+   },
+   {
+    "@id":"6bd5bab2",
+    "@name":"The Book and Record Bar",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/the-book-and-record-bar-london-england-6bd5bab2.html"
+   },
+   {
+    "@id":"1bd5b5b8",
+    "@name":"St James's Palace",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/st-jamess-palace-london-england-1bd5b5b8.html"
+   },
+   {
+    "@id":"7bd5b604",
+    "@name":"NOG Gallery",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/nog-gallery-london-england-7bd5b604.html"
+   }
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+import api.LastfmApi;
+import api.dto.ArtistDto;
+import api.dto.TrackDto;
+import model.Artist;
+import org.junit.Assert;
+import org.junit.Test;
+import util.FileRequest;
+
+public class LastfmApiTest {
+    private static LastfmApi lf = new LastfmApi(new FileRequest());
+
+    @Test
+    public void getArtistTest() {
+        ArtistDto actual = lf.getArtistInfo("9c9f1380-2516-4fc9-a3e6-f9f61941d090");
+        String expected = "ArtistDto{bio='Muse are an alternative rock band from Teignmouth, England, United Kingdom. The band consists of Matthew Bellamy on lead vocals, piano, keyboard and guitar, Chris Wolstenholme on backing vocals and bass guitar, and Dominic Howard on drums and percussion.  \n" +
+                "\n" +
+                "They have been friends since their formation in early 1994 and changed band names a number of times (such as Gothic Plague, Fixed Penalty, and Rocket Baby Dolls) before adopting the name Muse. Since the release of their fourth album <a href=\"https://www.last.fm/music/Muse\">Read more on Last.fm</a>', " +
+                "name='Muse', " +
+                "mbid='fd857293-5ab8-40de-b29e-55a69d4e4d0f', " +
+                "url='https://www.last.fm/music/Muse', " +
+                "str=[https://lastfm-img2.akamaized.net/i/u/34s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/64s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/174s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/300x300/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/arQ/2cf19f323f4c704a8a2a234a0e72988e.png]}";
+        Assert.assertEquals(actual.toString(), expected);
+    }
+
+    @Test
+    public void getTrackTest() {
+        TrackDto actual = lf.getTrackInfo("Skunk+Anansie", "Cheap+Honesty");
+        String expected = "TrackDto{name='Cheap Honesty', " +
+                "artistName='Skunk Anansie', " +
+                "albumName='Post Orgasmic Chill', " +
+                "trackUrl='https://www.last.fm/music/Skunk+Anansie/_/Cheap+Honesty', " +
+                "imagesUrl=[https://lastfm-img2.akamaized.net/i/u/34s/80a47a15a5f94f438c022111c99f0e92.png, https://lastfm-img2.akamaized.net/i/u/64s/80a47a15a5f94f438c022111c99f0e92.png, https://lastfm-img2.akamaized.net/i/u/174s/80a47a15a5f94f438c022111c99f0e92.png, https://lastfm-img2.akamaized.net/i/u/300x300/80a47a15a5f94f438c022111c99f0e92.png], " +
+                "albumUrl='https://www.last.fm/music/Skunk+Anansie/Post+Orgasmic+Chill', " +
+                "duration=227000}";
+        Assert.assertEquals(actual.toString(), expected);
+    }
+}

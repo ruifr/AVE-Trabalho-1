@@ -20,6 +20,9 @@ public class Venue {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Venue{" +
+                "name='" + name + '\'' +
+                ", events=" + events +
+                '}';
     }
 }

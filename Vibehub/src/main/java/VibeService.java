@@ -2,10 +2,12 @@ import api.LastfmApi;
 import api.SetlistApi;
 import api.dto.ArtistDto;
 import api.dto.EventDto;
+import api.dto.TrackDto;
 import api.dto.VenueDto;
 import model.*;
 import model.Venue;
 import util.IRequest;
+import util.queries.LazyQueries;
 
 import java.util.Arrays;
 
@@ -38,7 +40,8 @@ public class VibeService {
     }
 
     private Event dtoToEvent(EventDto event) {
-        return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), null, event.getSetid(), event.getSets());
+        Iterable<Track> tracks = map(Arrays.asList(event.getTracksNames()), name -> getTrack(event.getArtistName(), name));
+        return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracks, event.getSetid(), event.getSets());
     }
 
     public Artist getArtist(String s){
@@ -46,10 +49,14 @@ public class VibeService {
     }
 
     private Artist DtoToArtist(ArtistDto artist) {
-        return null;//new Artist();
+        return new Artist(artist.getName(), artist.getBio(), artist.getUrl(), artist.getStr(), artist.getMbid());
     }
 
     public Track getTrack(String artist, String trackName){
-        throw new UnsupportedOperationException();
+        return dtoToTrack(lastfm.getTrackInfo(artist, trackName));
+    }
+
+    private Track dtoToTrack(TrackDto track) {
+        return new Track(track.getName(), track.getArtistName(), track.getAlbumName(), track.getTrackUrl(), track.getImagesUrl(), track.getAlbumUrl(), track.getDuration());
     }
 }

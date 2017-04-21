@@ -21,4 +21,12 @@ public class VenueDto {
     public String getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "VenueDto{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }
