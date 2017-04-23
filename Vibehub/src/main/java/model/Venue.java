@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Arrays;
+
 public class Venue {
 
     private final String name;
@@ -20,9 +22,11 @@ public class Venue {
 
     @Override
     public String toString() {
-        return "Venue{" +
-                "name='" + name + '\'' +
-                ", events=" + events +
-                '}';
+        StringBuilder sb = new StringBuilder("{name='");
+        sb.append(name);
+        sb.append("', events=[");
+        getEvents().forEach(sb::append);
+        sb.append("]}");
+        return sb.toString();
     }
 }

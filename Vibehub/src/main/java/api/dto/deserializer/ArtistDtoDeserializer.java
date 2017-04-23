@@ -9,8 +9,7 @@ import java.lang.reflect.Type;
 public class ArtistDtoDeserializer implements JsonDeserializer<ArtistDto> {
     @Override
     public ArtistDto deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
-        if(json.getAsJsonObject().isJsonNull())
-            return null;
+        if(!json.getAsJsonObject().has("artist")) return null;
         JsonObject jo = json.getAsJsonObject().get("artist").getAsJsonObject();
         return new ArtistDto(
                 jo.get("bio").getAsJsonObject().get("summary").getAsString(),

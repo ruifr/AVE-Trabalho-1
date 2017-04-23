@@ -21,4 +21,8 @@ public class VenueContainerDto {
     public VenueDto[] getVenues() {
         return venue;
     }
+
+    public boolean isValidPage(int p) {
+        return p > 0 && p < (total/itemPerPage + 0.5);
+    }
 }

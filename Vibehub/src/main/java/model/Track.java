@@ -51,7 +51,7 @@ public class Track {
 
     @Override
     public String toString() {
-        return "Track{" +
+        return "{" +
                 "name='" + name + '\'' +
                 ", artistName='" + artistName + '\'' +
                 ", albumName='" + albumName + '\'' +

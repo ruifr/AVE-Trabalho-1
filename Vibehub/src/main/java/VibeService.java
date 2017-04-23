@@ -1,9 +1,6 @@
 import api.LastfmApi;
 import api.SetlistApi;
-import api.dto.ArtistDto;
-import api.dto.EventDto;
-import api.dto.TrackDto;
-import api.dto.VenueDto;
+import api.dto.*;
 import model.*;
 import model.Venue;
 import util.IRequest;
@@ -35,10 +32,11 @@ public class VibeService {
         Function<VenueDto, Venue> func = this::dtoToVenue;
         return () -> new Iterator<Venue>() {
             int page = 1;
-            Iterator<Venue> iter = map(Arrays.asList(setlist.getVenues(query, page++)), func).iterator();
+            VenueContainerDto vcd = setlist.getVenueContainer(query, page++);
+            Iterator<Venue> iter = map(Arrays.asList(vcd.getVenues()), func).iterator();
             @Override
             public boolean hasNext() {
-                if (!iter.hasNext())
+                if (!iter.hasNext() && vcd.isValidPage(page))
                     iter = map(Arrays.asList(setlist.getVenues(query, page++)), func).iterator();
                 return iter.hasNext();
             }
@@ -59,10 +57,11 @@ public class VibeService {
         Function<EventDto, Event> func = this::dtoToEvent;
         return () -> new Iterator<Event>() {
             int page = 1;
-            Iterator<Event> iter = map(Arrays.asList(setlist.getEvents(query, page++)), func).iterator();
+            EventContainerDto ecd = setlist.getEventContainer(query, page++);
+            Iterator<Event> iter = map(Arrays.asList(ecd.getEvents()), func).iterator();
             @Override
             public boolean hasNext() {
-                if (!iter.hasNext())
+                if (!iter.hasNext() && ecd.isValidPage(page))
                     iter = map(Arrays.asList(setlist.getEvents(query, page++)), func).iterator();
                 return iter.hasNext();
             }
@@ -87,7 +86,7 @@ public class VibeService {
     }
 
     private Artist DtoToArtist(ArtistDto artist) {
-        return new Artist(artist.getName(), artist.getBio(), artist.getUrl(), artist.getImagesUri(), artist.getMbid());
+        return artist == null ? null : new Artist(artist.getName(), artist.getBio(), artist.getUrl(), artist.getImagesUri(), artist.getMbid());
     }
 
     public Track getTrack(String artist, String trackName){

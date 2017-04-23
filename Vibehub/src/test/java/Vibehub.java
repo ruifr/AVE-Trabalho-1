@@ -1,6 +1,7 @@
 import model.Event;
 import model.Venue;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import util.Countify;
 import util.FileRequest;
@@ -25,13 +26,14 @@ public class Vibehub {
         }
     }
 
+    @Ignore
     @Test
     public void runAllTest() {
         VibeService vs = new VibeService(new HttpRequest());
         for(Venue v : vs.searchVenues("london")) {
             for(Event e : v.getEvents()) {
                 e.getArtist();
-                e.getTracks();
+                e.getTracks().iterator();
             }
         }
     }

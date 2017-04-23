@@ -17,16 +17,8 @@ public class EventContainerDto {
         this.events = events;
     }
 
-    public int getItemPerPage() {
-        return itemPerPage;
-    }
-
-    public int getPage() {
-        return page;
-    }
-
-    public int getTotal() {
-        return total;
+    public boolean isValidPage(int p) {
+        return p > 0 && p < (total/itemPerPage + 0.5);
     }
 
     public EventDto[] getEvents() {

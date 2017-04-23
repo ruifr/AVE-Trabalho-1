@@ -47,4 +47,20 @@ public class Event {
     public String getSetlistId(){
         return setId;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("{artist=");
+        sb.append(getArtist());
+        sb.append(", eventDate='");
+        sb.append(eventDate);
+        sb.append("', tour='");
+        sb.append(tour);
+        sb.append("', tracks=[");
+        tracks.forEach(sb::append);
+        sb.append("], setId='");
+        sb.append(setId);
+        sb.append("'}");
+        return sb.toString();
+    }
 }

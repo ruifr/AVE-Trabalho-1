@@ -31,16 +31,14 @@ public class LastfmApi {
     public ArtistDto getArtistInfo(String mbid) {
         String path = LASTFM_HOST + LASTFM_ARTIST_ARGS;
         String url = String.format(path, mbid, LASTFM_key);
-        Iterable<String> content = null;
-        content = req.getContent(url);
+        Iterable<String> content = req.getContent(url);
         return gson.fromJson(content.iterator().next(), ArtistDto.class);
     }
 
     public TrackDto getTrackInfo(String artist, String track) {
         String path = LASTFM_HOST + LASTFM_TRACK_ARGS;
         String url = String.format(path, track, artist, LASTFM_key).replace(' ','+');
-        Iterable<String> content = null;
-        content = req.getContent(url);
+        Iterable<String> content = req.getContent(url);
         return gson.fromJson(content.iterator().next(), TrackDto.class);
     }
 }

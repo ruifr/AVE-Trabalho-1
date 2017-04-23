@@ -39,7 +39,7 @@ public class Artist {
 
     @Override
     public String toString() {
-        return "Artist{" +
+        return "{" +
                 "bio='" + bio + '\'' +
                 ", name='" + name + '\'' +
                 ", url='" + url + '\'' +
