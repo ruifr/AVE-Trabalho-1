@@ -11,11 +11,11 @@ public class TrackDto {
     private final String artistName;
     private final String albumName;
     private final String trackUrl;
-    private final String[] imagesUrl;
+    private final ImageDto[] imagesUrl;
     private final String albumUrl;
     private final int duration;
 
-    public TrackDto(String name, String artistName, String albumName, String trackUrl, String[] imagesUrl, String albumUrl, int duration) {
+    public TrackDto(String name, String artistName, String albumName, String trackUrl, ImageDto[] imagesUrl, String albumUrl, int duration) {
         this.name = name;
         this.artistName = artistName;
         this.albumName = albumName;
@@ -42,7 +42,9 @@ public class TrackDto {
     }
 
     public String[] getImagesUrl() {
-        return imagesUrl;
+        String[] ret = new String[imagesUrl.length];
+        for(int i = 0 ; i < ret.length ; ++i) ret[i] = imagesUrl[i].toString();
+        return ret;
     }
 
     public String getAlbumUrl() {

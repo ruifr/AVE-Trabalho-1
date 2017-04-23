@@ -2,21 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3216ca-af49-4bf7-85cd-695617316490" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/GsonTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1.iml" afterPath="$PROJECT_DIR$/.idea/modules/MPD-Trabalho-1.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueDtoDeserializer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/VibehubTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1searchvenues.json-cityName-london.txt" afterPath="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1searchvenues.json-cityName-london-p-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1venue33d4a8c9setlists.json.txt" afterPath="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1venue33d4a8c9setlists.json-p-1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ArtistDto.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ArtistDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventContainerDto.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventContainerDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventDto.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ImageDto.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ImageDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/TrackDto.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/TrackDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/app.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/app.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ArtistDtoDeserializer.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ArtistDtoDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDtoDeserializer.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDtoDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventDtoDeserializer.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventDtoDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/TrackDtoDeserializer.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/TrackDtoDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueContainerDtoDeserializer.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueContainerDtoDeserializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/Artist.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/model/Artist.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/Event.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/model/Event.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/Track.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/model/Track.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/model/Venue.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/model/Venue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/util/HttpRequest.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/HttpRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/util/IteratorFromReader.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/IteratorFromReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/util/queries/IteratorMap.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/queries/IteratorMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest.java" afterPath="$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" afterPath="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/SetlistApiTest.java" afterPath="$PROJECT_DIR$/Vibehub/src/test/java/SetlistApiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/app/src/main/java/App.java" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/app/src/main/java/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -83,8 +98,8 @@
       <file leaf-file-name="LastfmApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
               <folding>
                 <element signature="method#LastfmApi#0;class#LastfmApi#0" expanded="false" />
               </folding>
@@ -92,62 +107,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetlistApi.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SetlistApi.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="625">
+              <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
               <folding>
-                <element signature="method#SetlistApi#0;class#SetlistApi#0" expanded="false" />
-                <element signature="method#getEvents#0;class#SetlistApi#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VibeService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="42" column="84" lean-forward="false" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
-              <folding>
-                <element signature="method#searchVenues#0;class#VibeService#0" expanded="false" />
-                <element signature="method#getEvents#0;class#VibeService#0" expanded="false" />
-                <element signature="method#DtoToArtist#0;class#VibeService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IteratorMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/queries/IteratorMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="e#1278#1279#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LazyTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LastfmApiTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-              <folding>
-                <element signature="method#getArtistTest#0;class#LastfmApiTest#0" expanded="false" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -332,429 +299,6 @@
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'MPD-Trabalho-1'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../mpd-2017-i41d/app">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':app'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':app'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a JVM application" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="run" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="startScripts" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':app'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the project as a distribution as-is." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="installDist" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the main distributions" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="assembleDist" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="distTar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Bundles the project as a distribution." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="distZip" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/app" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../mpd-2017-i41d/aula01">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':aula01'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':aula01'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':aula01'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':aula01'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':aula01'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':aula01'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':aula01'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':aula01'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':aula01'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula01" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':aula13-json'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':aula13-json'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':aula13-json'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':aula13-json'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':aula13-json'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':aula13-json'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':aula13-json'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':aula13-json'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':aula13-json'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../mpd-2017-i41d/aula13-json" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
@@ -946,53 +490,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/APP.java" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/Vibehub/build.gradle" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ContainerVenueDto.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/test/java/GsonTestTest.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/Request.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDtoDeserializer.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/test/java/SetlistTest.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/deserializer/VenueDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/deserializer/VenueContainerDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/java/GsonTest.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueContainerDtoDeserializer.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDeserializer.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueContainerDto.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventContainerDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/queries/NaiveQueries.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ImageDto.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ArtistDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/-method-artist.getinfo-format-json-mbid-9c9f1380-2516-4fc9-a3e6-f9f6.txt" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ArtistDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/-track-Cheap-Honesty-artist-Skunk-Anansie-method-track-getInfo-format-json-api_key-1e36f8968af975f197cf0502a2cad082.txt" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/model/Artist.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/model/Track.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/TrackDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest/LastfmApiTest.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1venue33d4a8c9setlists.json.txt" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/venues.json-cityName-london.txt" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/FileRequest.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/java/SetlistApiTest/SetlistApiTest.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/app.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/java/VibehubTest/VibehubTest.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/model/Venue.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/java/VibehubTest.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/queries/LazyQueries.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventDto.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/model/Event.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/queries/IteratorMap.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueContainerDto.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1venue6bd79276setlists.json-p-1.txt.txt" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/resources/2.0-method-track.getinfo-format-json-track-Where+Am+I+Going--artist-Barbra+Streisand-api_key-1e36f8968af975f197cf0502a2cad082.txt" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/resources/2.0-method-artist.getinfo-format-json-mbid-56cd15a1-0d74-438b-8244-c96ffe1cae03-api_key-1e36f8968af975f197cf0502a2cad082.txt" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueDtoDeserializer.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/model/Artist.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueContainerDtoDeserializer.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDtoDeserializer.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ImageDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/TrackDto.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventDtoDeserializer.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ArtistDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/TrackDtoDeserializer.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/model/Track.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventContainerDto.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/model/Event.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventDto.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventDtoDeserializer.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/java/SetlistApiTest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/java/CacheTest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1searchvenues.json-cityName-london-p-2.txt" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/IRequest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/IteratorFromReader.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ArtistDtoDeserializer.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/VibeServiceCache.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/HttpRequest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/CachedHttpRequest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1searchvenues.json-cityName-lisbon-p-1.txt" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java" />
       </list>
     </option>
   </component>
@@ -1041,6 +589,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1053,89 +602,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vibehub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vibehub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vibehub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vibehub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1173,183 +641,7 @@
       <recent name="C:\Users\Marcos\Desktop\MPD\MPD-Trabalho-1" />
     </key>
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/app/app.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/app/build.gradle</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/settings.gradle</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/aula16-cache.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/build.gradle</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Cache.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Countify.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/FileRequest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/HttpRequest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/ICounter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/IRequest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/IteratorFromReader.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Loggify.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/Request.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/WeatherPredicate.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/EagerQueries.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorDistinct.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorFilter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorMap.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/IteratorSkip.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/LazyQueries.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/util/queries/NaiveQueries.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/WeatherService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/WeatherServiceCache.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/WeatherWebApi.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/LocationDto.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/SearchDto.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/SearchResultDto.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/data/dto/WeatherInfoDto.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/model/Location.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/main/java/weather/model/WeatherInfo.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/EagerQueriesTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/LazyQueriesTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/NaiveQueriesTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/past-weather.ashx-q-41.15--8.6167-date-2017-02-01-enddate-2017-02-28</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/past-weather.ashx-q-41.15--8.617-date-2017-02-01-enddate-2017-02-28-</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/past-weather.ashx-q-41.15--8.617-date-2017-02-15-enddate-2017-03-15-</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/search.ashx-query-Porto-format-json-key-2ec1272572f14053a83105313170</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/resources/search.ashx-query-Porto-format-tab-key-2ec1272572f14053a831053131709</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mpd-2017-i41d/aula13-json/aula13-json.iml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
-  <component name="RunManager" selected="JUnit.All in MPD-Trabalho-1">
-    <configuration default="false" name="SetlistApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MPD-Trabalho-1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SetlistApiTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Vibehub.nextPageTest">
     <configuration default="false" name="All in MPD-Trabalho-1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MPD-Trabalho-1" />
@@ -1371,14 +663,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="VibehubTest.vibehubTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SetlistApiTest.getEvents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MPD-Trabalho-1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VibehubTest" />
-      <option name="METHOD_NAME" value="vibehubTest" />
+      <option name="MAIN_CLASS_NAME" value="SetlistApiTest" />
+      <option name="METHOD_NAME" value="getEvents" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1392,35 +684,56 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LazyTest.Lazy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Vibehub.nextPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="MPD-Trabalho-1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Vibehub" />
+      <option name="METHOD_NAME" value="nextPageTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Vibehub.runAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="MPD-Trabalho-1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Vibehub" />
+      <option name="METHOD_NAME" value="runAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LazyTest.serviceMemoizeLazyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MPD-Trabalho-1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LazyTest" />
-      <option name="METHOD_NAME" value="Lazy" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="LastfmApiTest.getTrackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="MPD-Trabalho-1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LastfmApiTest" />
-      <option name="METHOD_NAME" value="getTrackTest" />
+      <option name="METHOD_NAME" value="serviceMemoizeLazyTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1824,19 +1137,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SetlistApiTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in MPD-Trabalho-1" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VibehubTest.vibehubTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LazyTest.Lazy" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LastfmApiTest.getTrackTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in MPD-Trabalho-1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SetlistApiTest.getEvents" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Vibehub.nextPageTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Vibehub.runAllTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LazyTest.serviceMemoizeLazyTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in MPD-Trabalho-1" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LastfmApiTest.getTrackTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LazyTest.Lazy" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VibehubTest.vibehubTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SetlistApiTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Vibehub.nextPageTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in MPD-Trabalho-1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LazyTest.serviceMemoizeLazyTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Vibehub.runAllTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SetlistApiTest.getEvents" />
       </list>
     </recent_temporary>
   </component>
@@ -1856,7 +1169,8 @@
       <workItem from="1492518838777" duration="1745000" />
       <workItem from="1492531056335" duration="1056000" />
       <workItem from="1492532193816" duration="4702000" />
-      <workItem from="1492555081961" duration="60499000" />
+      <workItem from="1492555081961" duration="65160000" />
+      <workItem from="1492864694034" duration="25532000" />
     </task>
     <task id="LOCAL-00001" summary="..">
       <created>1492617281829</created>
@@ -1876,39 +1190,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_MPD-Trabalho-1 - 2017.04.21 at 03h 11m 26s.xml">
+    <history-entry file="All_in_MPD-Trabalho-1 - 2017.04.23 at 04h 32m 34s.xml">
       <configuration name="All in MPD-Trabalho-1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MPD-Trabalho-1 - 2017.04.21 at 03h 12m 26s.xml">
-      <configuration name="All in MPD-Trabalho-1" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 17m 50s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LastfmApiTest_getTrackTest - 2017.04.21 at 03h 11m 43s.xml">
-      <configuration name="LastfmApiTest.getTrackTest" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 25m 57s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LastfmApiTest_getTrackTest - 2017.04.21 at 03h 12m 16s.xml">
-      <configuration name="LastfmApiTest.getTrackTest" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 27m 18s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_Lazy - 2017.04.21 at 03h 09m 10s.xml">
-      <configuration name="LazyTest.Lazy" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 27m 48s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_Lazy - 2017.04.21 at 03h 09m 57s.xml">
-      <configuration name="LazyTest.Lazy" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 28m 13s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_Lazy - 2017.04.21 at 03h 10m 09s.xml">
-      <configuration name="LazyTest.Lazy" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 30m 37s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_Lazy - 2017.04.21 at 03h 10m 24s.xml">
-      <configuration name="LazyTest.Lazy" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 30m 57s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_Lazy - 2017.04.21 at 03h 10m 39s.xml">
-      <configuration name="LazyTest.Lazy" configurationId="JUnit" />
+    <history-entry file="LazyTest_serviceMemoizeLazyTest - 2017.04.23 at 04h 31m 14s.xml">
+      <configuration name="LazyTest.serviceMemoizeLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_Lazy - 2017.04.21 at 03h 10m 53s.xml">
-      <configuration name="LazyTest.Lazy" configurationId="JUnit" />
+    <history-entry file="Vibehub_nextPageTest - 2017.04.23 at 04h 33m 18s.xml">
+      <configuration name="Vibehub.nextPageTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71555000" />
+    <option name="totallyTimeSpent" value="101748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1920,8 +1234,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1222" extended-state="6" />
-    <editor active="false" />
+    <frame x="-11" y="-11" width="1942" height="1222" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1930,12 +1244,11 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2977473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3212537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908913" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32615083" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1943,9 +1256,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285985" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32810968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21004319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2138229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1953,7 +1265,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1989,31 +1303,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java</url>
-          <line>55</line>
+          <url>file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ArtistDtoDeserializer.java</url>
+          <line>12</line>
           <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java</url>
-          <line>38</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="117" />
+          <option name="timeStamp" value="189" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="118" />
+      <option name="time" value="192" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="content.iterator().next()" language="JAVA" />
+        <watch expression="iter.next()" language="JAVA" />
       </configuration>
       <configuration name="Application">
         <watch expression="a.getBio()" language="JAVA" />
@@ -2025,356 +1325,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar!/com/google/gson/internal/bind/TypeAdapterRuntimeTypeWrapper.java">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/queries/IteratorMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar!/com/google/gson/internal/bind/ArrayTypeAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/queries/NaiveQueries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar!/com/google/gson/JsonDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="88" column="11" lean-forward="false" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar!/com/google/gson/stream/JsonReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="1584" column="0" lean-forward="false" selection-start-line="1584" selection-start-column="0" selection-end-line="1584" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="45" column="1" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding>
-            <element signature="e#49101#49912#0" expanded="false" />
-            <element signature="e#49911#49912#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1278#1279#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar!/com/google/gson/TypeAdapter.java">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/Countify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+        <state relative-caret-position="426">
+          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        <state relative-caret-position="251">
+          <caret line="2939" column="34" lean-forward="true" selection-start-line="2939" selection-start-column="34" selection-end-line="2939" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="http://google.com">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/Closeable.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="-1061">
+          <caret line="2492" column="21" lean-forward="false" selection-start-line="2492" selection-start-column="21" selection-end-line="2492" selection-end-column="21" />
+          <folding>
+            <element signature="e#101735#101736#0" expanded="false" />
+            <element signature="e#101781#101782#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/InputStream.java">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1venue6bd79276setlists.json-p-1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        <state relative-caret-position="599">
+          <caret line="113" column="1" lean-forward="false" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/2.0-method-artist.getinfo-format-json-mbid-9c9f1380-2516-4fc9-a3e6-f9f61941d090-api_key-1e36f8968af975f197cf0502a2cad082.txt">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1venue6bd79276setlists.json-p-1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="109" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/2.0-method-track.getinfo-format-json-track-Cheap+Honesty-artist-Skunk+Anansie-api_key-1e36f8968af975f197cf0502a2cad082.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1394" lean-forward="false" selection-start-line="0" selection-start-column="1394" selection-end-line="0" selection-end-column="1394" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ImageDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding>
-            <element signature="method#Artist#0;class#Artist#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ArtistDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="method#ArtistDto#0;class#ArtistDto#0" expanded="false" />
-            <element signature="method#toString#0;class#ArtistDto#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ArtistDtoDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/IteratorFromReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar!/com/google/gson/internal/bind/TreeTypeAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1venue33d4a8c9setlists.json.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="2189" column="1" lean-forward="false" selection-start-line="2189" selection-start-column="1" selection-end-line="2189" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1searchvenues.json-cityName-london.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="578" column="1" lean-forward="false" selection-start-line="578" selection-start-column="1" selection-end-line="578" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/FileRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDtoDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventContainerDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/SetlistApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="method#getVenues#0;class#SetlistApiTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/VibehubTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/ICounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/app.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueContainerDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="method#VenueContainerDto#0;class#VenueContainerDto#0" expanded="false" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueDtoDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="70" lean-forward="false" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueContainerDtoDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="method#Event#0;class#Event#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/TrackDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="method#TrackDto#0;class#TrackDto#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Track.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventDtoDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/queries/LazyQueries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2387,30 +1387,270 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Venue.java">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/2.0-method-track.getinfo-format-json-track-Where+Am+I+Going--artist-Barbra+Streisand-api_key-1e36f8968af975f197cf0502a2cad082.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="250">
+          <caret line="0" column="1135" lean-forward="false" selection-start-line="0" selection-start-column="1135" selection-end-line="0" selection-end-column="1135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/2.0-method-artist.getinfo-format-json-mbid-56cd15a1-0d74-438b-8244-c96ffe1cae03-api_key-1e36f8968af975f197cf0502a2cad082.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8003" lean-forward="false" selection-start-line="0" selection-start-column="8003" selection-end-line="0" selection-end-column="8003" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/VibehubTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueDtoDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="method#toString#0;class#Venue#0" expanded="false" />
+            <element signature="method#VenueDto#0;class#VenueDto#0" expanded="false" />
+            <element signature="method#toString#0;class#VenueDto#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventDto.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        <state relative-caret-position="328">
+          <caret line="3798" column="30" lean-forward="false" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
           <folding>
-            <element signature="method#EventDto#0;class#EventDto#0" expanded="false" />
-            <element signature="method#toString#0;class#EventDto#0" expanded="false" />
+            <element signature="e#177013#177014#0" expanded="false" />
+            <element signature="e#177054#177055#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ImageDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ArtistDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding>
+            <element signature="method#ArtistDto#0;class#ArtistDto#0" expanded="false" />
+            <element signature="method#getImagesUri#0;class#ArtistDto#0" expanded="false" />
+            <element signature="method#toString#0;class#ArtistDto#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/TrackDtoDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/TrackDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="method#TrackDto#0;class#TrackDto#0" expanded="false" />
+            <element signature="method#getImagesUrl#0;class#TrackDto#0" expanded="false" />
+            <element signature="method#toString#0;class#TrackDto#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Track.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="method#Artist#0;class#Artist#0" expanded="false" />
+            <element signature="method#toString#0;class#Artist#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDtoDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventDtoDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="method#getTracksNames#0;class#EventDto#0" expanded="false" />
+            <element signature="method#insertSongsInto#0;class#EventDto#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventContainerDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/SetlistApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="method#getVenues#0;class#SetlistApiTest#0" expanded="false" />
+            <element signature="method#getEvents#0;class#SetlistApiTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1searchvenues.json-cityName-london-p-2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="578" column="1" lean-forward="false" selection-start-line="578" selection-start-column="1" selection-end-line="578" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/queries/LazyQueries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/IteratorFromReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueContainerDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="method#VenueContainerDto#0;class#VenueContainerDto#0" expanded="false" />
+            <element signature="e#615#616#0" expanded="false" />
+            <element signature="e#643#644#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueContainerDtoDeserializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -2418,36 +1658,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java">
+    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding>
-            <element signature="method#SetlistApi#0;class#SetlistApi#0" expanded="false" />
-            <element signature="method#getEvents#0;class#SetlistApi#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="42" column="84" lean-forward="false" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
-          <folding>
-            <element signature="method#searchVenues#0;class#VibeService#0" expanded="false" />
-            <element signature="method#getEvents#0;class#VibeService#0" expanded="false" />
-            <element signature="method#DtoToArtist#0;class#VibeService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/queries/IteratorMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#1278#1279#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="218">
+          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2459,30 +1674,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/IRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        <state relative-caret-position="100">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ArtistDtoDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/rest0.1searchvenues.json-cityName-lisbon-p-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="578" column="1" lean-forward="false" selection-start-line="578" selection-start-column="1" selection-end-line="578" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Venue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/model/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="550">
+          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding>
             <element signature="method#LastfmApi#0;class#LastfmApi#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LastfmApiTest.java">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/CacheTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
-            <element signature="method#getArtistTest#0;class#LastfmApiTest#0" expanded="false" />
+            <element signature="method#searchVenuesLazyTest#0;class#LazyTest#0" expanded="false" />
+            <element signature="method#getEventsLazyTest#0;class#LazyTest#0" expanded="false" />
+            <element signature="method#serviceLazyTest#0;class#LazyTest#0" expanded="false" />
+            <element signature="method#serviceMemoizeLazyTest#0;class#LazyTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/CachedHttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+          <folding>
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="method#searchVenues#0;class#VibeService#0" expanded="false" />
+            <element signature="e#1588#1589#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
           </folding>
         </state>
       </provider>

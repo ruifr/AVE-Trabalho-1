@@ -1,12 +1,11 @@
 package api.dto;
 
-import api.dto.deserializer.VenueDtoDeserializer;
-import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 
-@JsonAdapter(VenueDtoDeserializer.class)
 public class VenueDto {
+    @SerializedName("@name")
     private String name;
+    @SerializedName("@id")
     private String id;
 
     public VenueDto(String name, String id) {

@@ -1,9 +1,10 @@
 package model;
 
-public class Artist {
+import java.util.Arrays;
 
-    private final String name;
+public class Artist {
     private final String bio;
+    private final String name;
     private final String url;
     private final String[] imagesUri;
     private final String mbid;
@@ -16,12 +17,12 @@ public class Artist {
         this.mbid = mbid;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public String getBio() {
         return bio;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getUrl() {
@@ -34,5 +35,16 @@ public class Artist {
 
     public String getMbid() {
         return mbid;
+    }
+
+    @Override
+    public String toString() {
+        return "Artist{" +
+                "bio='" + bio + '\'' +
+                ", name='" + name + '\'' +
+                ", url='" + url + '\'' +
+                ", imagesUri=" + Arrays.toString(imagesUri) +
+                ", mbid='" + mbid + '\'' +
+                '}';
     }
 }

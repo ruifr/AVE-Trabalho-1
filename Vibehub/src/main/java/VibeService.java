@@ -7,9 +7,13 @@ import api.dto.VenueDto;
 import model.*;
 import model.Venue;
 import util.IRequest;
-import util.queries.LazyQueries;
 
+import javax.swing.text.html.HTMLDocument;
+import java.io.FileNotFoundException;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.function.Function;
 
 import static util.queries.LazyQueries.map;
 
@@ -28,7 +32,23 @@ public class VibeService {
     }
 
     public Iterable<Venue> searchVenues(String query){
-        return map(Arrays.asList(setlist.getVenues(query)), this::dtoToVenue);
+        Function<VenueDto, Venue> func = this::dtoToVenue;
+        return () -> new Iterator<Venue>() {
+            int page = 1;
+            Iterator<Venue> iter = map(Arrays.asList(setlist.getVenues(query, page++)), func).iterator();
+            @Override
+            public boolean hasNext() {
+                if (!iter.hasNext())
+                    iter = map(Arrays.asList(setlist.getVenues(query, page++)), func).iterator();
+                return iter.hasNext();
+            }
+            @Override
+            public Venue next() {
+                if(hasNext())
+                    return iter.next();
+                throw new NoSuchElementException();
+            }
+        };
     }
 
     private Venue dtoToVenue(VenueDto venue) {
@@ -36,12 +56,30 @@ public class VibeService {
     }
 
     public Iterable<Event> getEvents(String query) {
-        return map(Arrays.asList(setlist.getEvents(query)), this::dtoToEvent);
+        Function<EventDto, Event> func = this::dtoToEvent;
+        return () -> new Iterator<Event>() {
+            int page = 1;
+            Iterator<Event> iter = map(Arrays.asList(setlist.getEvents(query, page++)), func).iterator();
+            @Override
+            public boolean hasNext() {
+                if (!iter.hasNext())
+                    iter = map(Arrays.asList(setlist.getEvents(query, page++)), func).iterator();
+                return iter.hasNext();
+            }
+
+            @Override
+            public Event next() {
+                if(hasNext())
+                    return iter.next();
+                throw new NoSuchElementException();
+            }
+        };
     }
 
     private Event dtoToEvent(EventDto event) {
-        Iterable<Track> tracks = map(Arrays.asList(event.getTracksNames()), name -> getTrack(event.getArtistName(), name));
-        return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracks, event.getSetid(), event.getSets());
+        String[] tracksNames = event.getTracksNames();
+        Iterable<Track> tracks = map(Arrays.asList(tracksNames), name -> getTrack(event.getArtistName(), name));
+        return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, tracks, event.getSetid());
     }
 
     public Artist getArtist(String s){
@@ -49,7 +87,7 @@ public class VibeService {
     }
 
     private Artist DtoToArtist(ArtistDto artist) {
-        return new Artist(artist.getName(), artist.getBio(), artist.getUrl(), artist.getStr(), artist.getMbid());
+        return new Artist(artist.getName(), artist.getBio(), artist.getUrl(), artist.getImagesUri(), artist.getMbid());
     }
 
     public Track getTrack(String artist, String trackName){

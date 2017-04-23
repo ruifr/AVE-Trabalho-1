@@ -5,7 +5,9 @@ import com.google.gson.annotations.SerializedName;
 public class ImageDto {
     @SerializedName("#text")
     private String text;
-    public String getText() {
+
+    @Override
+    public String toString() {
         return text;
     }
 }

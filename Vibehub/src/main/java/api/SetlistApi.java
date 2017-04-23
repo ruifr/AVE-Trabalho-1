@@ -9,13 +9,16 @@ import com.google.gson.GsonBuilder;
 import util.HttpRequest;
 import util.IRequest;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 import static util.queries.LazyQueries.join;
 
 public class SetlistApi {
     private static final String SETLIST_HOST = "https://api.setlist.fm";
     private static final String SETLIST_VENUES = "/rest/0.1/search/venues.json";
-    private static final String SETLIST_VENUES_ARGS = "?cityName=%s";
-    private static final String SETLIST_EVENTS = "/rest/0.1/venue/%s/setlists.json";
+    private static final String SETLIST_VENUES_ARGS = "?cityName=%s&p=%s";
+    private static final String SETLIST_EVENTS = "/rest/0.1/venue/%s/setlists.json?p=%s";
 
     private final IRequest req;
     private Gson gson;
@@ -29,25 +32,17 @@ public class SetlistApi {
         this(new HttpRequest());
     }
 
-    public VenueDto[] getVenues(String cityName) {
+    public VenueDto[] getVenues(String cityName, int p){
         String path = SETLIST_HOST + SETLIST_VENUES + SETLIST_VENUES_ARGS;
-        String url = String.format(path, cityName);
-        Iterable<String> content = () -> req.getContent(url).iterator();
+        String url = String.format(path, cityName, p);
+        Iterable<String> content = req.getContent(url);
         return gson.fromJson(join(content), VenueContainerDto.class).getVenues();
     }
 
-    public VenueDto[] getVenues(String str, int i){
-        throw new UnsupportedOperationException();
-    }
-
-    public EventDto[] getEvents(String id){
+    public EventDto[] getEvents(String id, int p){
         String path = SETLIST_HOST + SETLIST_EVENTS;
-        String url = String.format(path, id);
-        Iterable<String> content = () -> req.getContent(url).iterator();
+        String url = String.format(path, id, p);
+        Iterable<String> content = req.getContent(url);
         return gson.fromJson(join(content), EventContainerDto.class).getEvents();
-    }
-
-    public EventDto[] getEvents(String str, int i){
-        throw new UnsupportedOperationException();
     }
 }

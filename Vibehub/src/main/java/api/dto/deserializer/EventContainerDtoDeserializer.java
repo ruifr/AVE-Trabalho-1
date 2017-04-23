@@ -10,12 +10,12 @@ public class EventContainerDtoDeserializer implements JsonDeserializer<EventCont
     @Override
     public EventContainerDto deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
         JsonObject jo = json.getAsJsonObject().get("setlists").getAsJsonObject();
-
-        EventDto[] temp = (json = jo.get("setlist")).isJsonArray() ? context.deserialize(json.getAsJsonArray(), EventDto[].class) : new EventDto[] {context.deserialize(json.getAsJsonObject(), EventDto.class)};
         return new EventContainerDto(
                 jo.get("@itemsPerPage").getAsInt(),
                 jo.get("@page").getAsInt(),
                 jo.get("@total").getAsInt(),
-                temp);
+                (json = jo.get("setlist")).isJsonArray() ?
+                        context.deserialize(json.getAsJsonArray(), EventDto[].class) :
+                        new EventDto[] {context.deserialize(json.getAsJsonObject(), EventDto.class)});
     }
 }

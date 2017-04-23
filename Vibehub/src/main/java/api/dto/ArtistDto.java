@@ -9,16 +9,16 @@ import java.util.Arrays;
 public class ArtistDto {
     private final String bio;
     private final String name;
-    private final String mbid;
     private final String url;
-    private final String[] str;
+    private final ImageDto[] imagesUri;
+    private final String mbid;
 
-    public ArtistDto(String bio, String name, String mbid, String url, String[] str) {
+    public ArtistDto(String bio, String name, String mbid, String url, ImageDto[] imagesUri) {
         this.bio = bio;
         this.name = name;
         this.mbid = mbid;
         this.url = url;
-        this.str = str;
+        this.imagesUri = imagesUri;
     }
 
     public String getBio() {
@@ -29,16 +29,18 @@ public class ArtistDto {
         return name;
     }
 
-    public String getMbid() {
-        return mbid;
-    }
-
     public String getUrl() {
         return url;
     }
 
-    public String[] getStr() {
-        return str;
+    public String[] getImagesUri() {
+        String[] ret = new String[imagesUri.length];
+        for(int i = 0 ; i < ret.length ; ++i) ret[i] = imagesUri[i].toString();
+        return ret;
+    }
+
+    public String getMbid() {
+        return mbid;
     }
 
     @Override
@@ -46,9 +48,9 @@ public class ArtistDto {
         return "ArtistDto{" +
                 "bio='" + bio + '\'' +
                 ", name='" + name + '\'' +
-                ", mbid='" + mbid + '\'' +
                 ", url='" + url + '\'' +
-                ", str=" + Arrays.toString(str) +
+                ", imagesUri=" + Arrays.toString(imagesUri) +
+                ", mbid='" + mbid + '\'' +
                 '}';
     }
 }

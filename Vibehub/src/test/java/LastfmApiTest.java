@@ -1,7 +1,6 @@
 import api.LastfmApi;
 import api.dto.ArtistDto;
 import api.dto.TrackDto;
-import model.Artist;
 import org.junit.Assert;
 import org.junit.Test;
 import util.FileRequest;
@@ -16,9 +15,9 @@ public class LastfmApiTest {
                 "\n" +
                 "They have been friends since their formation in early 1994 and changed band names a number of times (such as Gothic Plague, Fixed Penalty, and Rocket Baby Dolls) before adopting the name Muse. Since the release of their fourth album <a href=\"https://www.last.fm/music/Muse\">Read more on Last.fm</a>', " +
                 "name='Muse', " +
-                "mbid='fd857293-5ab8-40de-b29e-55a69d4e4d0f', " +
                 "url='https://www.last.fm/music/Muse', " +
-                "str=[https://lastfm-img2.akamaized.net/i/u/34s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/64s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/174s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/300x300/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/arQ/2cf19f323f4c704a8a2a234a0e72988e.png]}";
+                "imagesUri=[https://lastfm-img2.akamaized.net/i/u/34s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/64s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/174s/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/300x300/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/2cf19f323f4c704a8a2a234a0e72988e.png, https://lastfm-img2.akamaized.net/i/u/arQ/2cf19f323f4c704a8a2a234a0e72988e.png], " +
+                "mbid='fd857293-5ab8-40de-b29e-55a69d4e4d0f'}";
         Assert.assertEquals(actual.toString(), expected);
     }
 

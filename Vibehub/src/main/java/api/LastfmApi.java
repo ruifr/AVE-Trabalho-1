@@ -7,6 +7,8 @@ import com.google.gson.GsonBuilder;
 import util.HttpRequest;
 import util.IRequest;
 
+import java.io.FileNotFoundException;
+
 public class LastfmApi {
 
     private static final String LASTFM_HOST = "http://ws.audioscrobbler.com/2.0/";
@@ -29,14 +31,16 @@ public class LastfmApi {
     public ArtistDto getArtistInfo(String mbid) {
         String path = LASTFM_HOST + LASTFM_ARTIST_ARGS;
         String url = String.format(path, mbid, LASTFM_key);
-        Iterable<String> content = () -> req.getContent(url).iterator();
+        Iterable<String> content = null;
+        content = req.getContent(url);
         return gson.fromJson(content.iterator().next(), ArtistDto.class);
     }
 
     public TrackDto getTrackInfo(String artist, String track) {
         String path = LASTFM_HOST + LASTFM_TRACK_ARGS;
-        String url = String.format(path, track, artist, LASTFM_key);
-        Iterable<String> content = () -> req.getContent(url).iterator();
+        String url = String.format(path, track, artist, LASTFM_key).replace(' ','+');
+        Iterable<String> content = null;
+        content = req.getContent(url);
         return gson.fromJson(content.iterator().next(), TrackDto.class);
     }
 }

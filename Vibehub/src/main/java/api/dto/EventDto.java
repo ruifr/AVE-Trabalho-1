@@ -6,15 +6,17 @@ import com.google.gson.JsonElement;
 import com.google.gson.annotations.JsonAdapter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @JsonAdapter(EventDtoDeserializer.class)
 public class EventDto {
-    private String setid;
-    private String mbid;
+    private final String setid;
+    private final String mbid;
     private final String artistName;
-    private String eventDate;
-    private String tour;
+    private final String eventDate;
+    private final String tour;
+    private String[] tracks;
     private final JsonElement sets;
 
     public EventDto(String setid, String mbid, String artistName, String eventDate, String tour, JsonElement sets) {
@@ -39,8 +41,9 @@ public class EventDto {
     }
 
     public String[] getTracksNames(){
+        if(tracks != null) return tracks;
         if(sets.isJsonPrimitive())
-            return new String[0];
+            tracks = new String[0];
         else {
             List<String> res = new ArrayList<>();
             JsonElement set = sets.getAsJsonObject().get("set");
@@ -50,8 +53,9 @@ public class EventDto {
                         .getAsJsonArray()
                         .forEach(elem -> insertSongsInto(elem, res));
             }
-            return res.toArray(new String[res.size()]);
+            tracks = res.toArray(new String[res.size()]);
         }
+        return tracks;
     }
 
     private static void insertSongsInto(JsonElement elem, List<String> res) {
@@ -72,10 +76,6 @@ public class EventDto {
         return setid;
     }
 
-    public JsonElement getSets() {
-        return sets;
-    }
-
     public String getArtistName() {
         return artistName;
     }
@@ -85,9 +85,10 @@ public class EventDto {
         return "EventDto{" +
                 "setid='" + setid + '\'' +
                 ", mbid='" + mbid + '\'' +
+                ", artistName='" + artistName + '\'' +
                 ", eventDate='" + eventDate + '\'' +
                 ", tour='" + tour + '\'' +
-                ", sets=" + sets +
+                ", tracks=" + Arrays.toString(getTracksNames()) +
                 '}';
     }
 }

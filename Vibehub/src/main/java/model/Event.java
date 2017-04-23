@@ -1,26 +1,23 @@
 package model;
 
-import com.google.gson.JsonElement;
-
 import java.util.function.Supplier;
 
 public class Event {
-
     private final Supplier<Artist> artist;
     private Artist artistVal;
     private final String eventDate;
     private final String tour;
+    private final String[] tracksNames;
     private final Iterable<Track> tracks;
     private final String setId;
-    private final JsonElement sets;
 
-    public Event(Supplier<Artist> artist, String eventDate, String tour, Iterable<Track> tracks, String setId, JsonElement sets) {
+    public Event(Supplier<Artist> artist, String eventDate, String tour, String[] tracksNames, Iterable<Track> tracks, String setId) {
         this.artist = artist;
         this.eventDate = eventDate;
         this.tour = tour;
         this.tracks = tracks;
         this.setId = setId;
-        this.sets = sets;
+        this.tracksNames = tracksNames;
     }
 
     public Artist getArtist() {
@@ -37,6 +34,10 @@ public class Event {
 
     public String getTour(){
         return tour;
+    }
+
+    public String[] getTracksNames() {
+        return tracksNames;
     }
 
     public Iterable<Track> getTracks(){
