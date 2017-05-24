@@ -1,6 +1,8 @@
 package util;
 
+import java.util.stream.Stream;
+
 public interface IRequest {
 
-    Iterable<String> getContent(String path);
+    Stream<String> getContent(String path);
 }

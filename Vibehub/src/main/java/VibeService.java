@@ -5,14 +5,12 @@ import model.*;
 import model.Venue;
 import util.IRequest;
 
-import javax.swing.text.html.HTMLDocument;
-import java.io.FileNotFoundException;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.Spliterator;
+import java.util.Spliterators;
+import java.util.function.Consumer;
 import java.util.function.Function;
-
-import static util.queries.LazyQueries.map;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 public class VibeService {
 
@@ -28,57 +26,71 @@ public class VibeService {
         this(new SetlistApi(req), new LastfmApi(req));
     }
 
-    public Iterable<Venue> searchVenues(String query){
+    public Stream<Venue> searchVenues(String query){
         Function<VenueDto, Venue> func = this::dtoToVenue;
-        return () -> new Iterator<Venue>() {
+        return StreamSupport.stream(new Spliterators.AbstractSpliterator<Venue>(Long.MAX_VALUE, Spliterator.ORDERED) {
             int page = 1;
-            VenueContainerDto vcd = setlist.getVenueContainer(query, page++);
-            Iterator<Venue> iter = map(Arrays.asList(vcd.getVenues()), func).iterator();
+            VenueContainerDto vcd = null;
+            VenueDto dtos[];
+            int idxDto[] = new int[] { 0 };
+            Spliterator<Venue> str;
+
             @Override
-            public boolean hasNext() {
-                if (!iter.hasNext() && vcd.isValidPage(page))
-                    iter = map(Arrays.asList(setlist.getVenues(query, page++)), func).iterator();
-                return iter.hasNext();
+            public boolean tryAdvance(Consumer<? super Venue> action) {
+                if(vcd == null) {
+                    vcd = setlist.getVenueContainer(query, page++);
+                    idxDto[0] = 0;
+                    VenueDto dtos[] = vcd.getVenues();
+                    str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
+                    return tryAdvance(action);
+                }
+                if(str.tryAdvance(action::accept))
+                    return true;
+                if(vcd.isValidPage(page)) {
+                    idxDto[0] = 0;
+                    VenueDto dtos[] = vcd.getVenues();
+                    str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
+                    return tryAdvance(action);
+                }
+                return false;
             }
-            @Override
-            public Venue next() {
-                if(hasNext())
-                    return iter.next();
-                throw new NoSuchElementException();
-            }
-        };
+        }, false);
     }
 
     private Venue dtoToVenue(VenueDto venue) {
-        return new Venue(venue.getName(), getEvents(venue.getId()));
+        return new Venue(venue.getName(), () -> getEvents(venue.getId()));
     }
 
-    public Iterable<Event> getEvents(String query) {
+    public Stream<Event> getEvents(String query) {
         Function<EventDto, Event> func = this::dtoToEvent;
-        return () -> new Iterator<Event>() {
+        return StreamSupport.stream(new Spliterators.AbstractSpliterator<Event>(Long.MAX_VALUE, Spliterator.ORDERED) {
             int page = 1;
             EventContainerDto ecd = setlist.getEventContainer(query, page++);
-            Iterator<Event> iter = map(Arrays.asList(ecd.getEvents()), func).iterator();
-            @Override
-            public boolean hasNext() {
-                if (!iter.hasNext() && ecd.isValidPage(page))
-                    iter = map(Arrays.asList(setlist.getEvents(query, page++)), func).iterator();
-                return iter.hasNext();
-            }
+            EventDto dtos[] = ecd.getEvents();
+            int idxDto[] = new int[] { 0 };
+            Spliterator<Event> str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
 
             @Override
-            public Event next() {
-                if(hasNext())
-                    return iter.next();
-                throw new NoSuchElementException();
+            public boolean tryAdvance(Consumer<? super Event> action) {
+                if(str.tryAdvance(action::accept))
+                    return true;
+                if(ecd.isValidPage(page)) {
+                    dtos = ecd.getEvents();
+                    idxDto[0] = 0;
+                    str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
+                    return tryAdvance(action);
+                }
+                return false;
             }
-        };
+        }, false);
     }
 
     private Event dtoToEvent(EventDto event) {
         String[] tracksNames = event.getTracksNames();
-        Iterable<Track> tracks = map(Arrays.asList(tracksNames), name -> getTrack(event.getArtistName(), name));
-        return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, tracks, event.getSetid());
+        int i[] = new int[] { 0 };
+        Stream<String> res = Stream.generate(() -> tracksNames[i[0]++]);
+        Stream<Track> tracks = res.map(name -> getTrack(event.getArtistName(), name));
+        return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, () -> tracks, event.getSetid());
     }
 
     public Artist getArtist(String query){

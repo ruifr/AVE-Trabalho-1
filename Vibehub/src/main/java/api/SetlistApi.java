@@ -9,7 +9,8 @@ import com.google.gson.GsonBuilder;
 import util.HttpRequest;
 import util.IRequest;
 
-import static util.queries.LazyQueries.join;
+import java.util.function.BinaryOperator;
+import java.util.stream.Stream;
 
 public class SetlistApi {
     private static final String SETLIST_HOST = "https://api.setlist.fm";
@@ -32,8 +33,9 @@ public class SetlistApi {
     public VenueContainerDto getVenueContainer(String cityName, int p) {
         String path = SETLIST_HOST + SETLIST_VENUES + SETLIST_VENUES_ARGS;
         String url = String.format(path, cityName, p);
-        Iterable<String> content = req.getContent(url);
-        return gson.fromJson(join(content), VenueContainerDto.class);
+        Stream<String> content = req.getContent(url);
+        String s = content.reduce((v1, v2) -> v1.toString()+v2.toString()).get();
+        return gson.fromJson(s, VenueContainerDto.class);
     }
 
     public VenueDto[] getVenues(String cityName, int p){
@@ -43,8 +45,9 @@ public class SetlistApi {
     public EventContainerDto getEventContainer(String id, int p){
         String path = SETLIST_HOST + SETLIST_EVENTS;
         String url = String.format(path, id, p);
-        Iterable<String> content = req.getContent(url);
-        return gson.fromJson(join(content), EventContainerDto.class);
+        Stream<String> content = req.getContent(url);
+        String s = content.reduce((v1, v2) -> v1.toString()+v2.toString()).get();
+        return gson.fromJson(s, EventContainerDto.class);
     }
 
     public EventDto[] getEvents(String id, int p){

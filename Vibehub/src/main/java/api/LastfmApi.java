@@ -8,6 +8,7 @@ import util.HttpRequest;
 import util.IRequest;
 
 import java.io.FileNotFoundException;
+import java.util.stream.Stream;
 
 public class LastfmApi {
 
@@ -31,14 +32,14 @@ public class LastfmApi {
     public ArtistDto getArtistInfo(String mbid) {
         String path = LASTFM_HOST + LASTFM_ARTIST_ARGS;
         String url = String.format(path, mbid, LASTFM_key);
-        Iterable<String> content = req.getContent(url);
-        return gson.fromJson(content.iterator().next(), ArtistDto.class);
+        Stream<String> content = req.getContent(url);
+        return gson.fromJson(content.findFirst().get(), ArtistDto.class);
     }
 
     public TrackDto getTrackInfo(String artist, String track) {
         String path = LASTFM_HOST + LASTFM_TRACK_ARGS;
         String url = String.format(path, track, artist, LASTFM_key).replace(' ','+');
-        Iterable<String> content = req.getContent(url);
-        return gson.fromJson(content.iterator().next(), TrackDto.class);
+        Stream<String> content = req.getContent(url);
+        return gson.fromJson(content.findFirst().get(), TrackDto.class);
     }
 }

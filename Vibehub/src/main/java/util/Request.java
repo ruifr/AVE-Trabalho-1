@@ -1,7 +1,10 @@
 package util;
 
 import java.io.InputStream;
+import java.util.Spliterator;
 import java.util.function.Function;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * @author Miguel Gamboa
@@ -16,8 +19,9 @@ public class Request implements IRequest {
     }
 
     @Override
-    public final Iterable<String> getContent(String path) {
-        return () -> new IteratorFromReader(getStream.apply(path));
+    public final Stream<String> getContent(String path) {
+        Spliterator<String> iter = new IteratorFromReader(getStream.apply(path));
+        return StreamSupport.stream(iter, false);
     }
 
 }

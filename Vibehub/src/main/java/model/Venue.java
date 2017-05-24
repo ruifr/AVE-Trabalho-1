@@ -1,13 +1,14 @@
 package model;
 
-import java.util.Arrays;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 public class Venue {
 
     private final String name;
-    private final Iterable<Event> events;
+    private final Supplier<Stream<Event>> events;
 
-    public Venue(String name, Iterable<Event> events) {
+    public Venue(String name, Supplier<Stream<Event>> events) {
         this.name = name;
         this.events = events;
     }
@@ -16,8 +17,8 @@ public class Venue {
         return name;
     }
 
-    public Iterable<Event> getEvents() {
-        return events;
+    public Stream<Event> getEvents() {
+        return events.get();
     }
 
     @Override

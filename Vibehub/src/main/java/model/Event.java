@@ -1,6 +1,7 @@
 package model;
 
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 public class Event {
     private final Supplier<Artist> artist;
@@ -8,10 +9,10 @@ public class Event {
     private final String eventDate;
     private final String tour;
     private final String[] tracksNames;
-    private final Iterable<Track> tracks;
+    private final Supplier<Stream<Track>> tracks;
     private final String setId;
 
-    public Event(Supplier<Artist> artist, String eventDate, String tour, String[] tracksNames, Iterable<Track> tracks, String setId) {
+    public Event(Supplier<Artist> artist, String eventDate, String tour, String[] tracksNames, Supplier<Stream<Track>> tracks, String setId) {
         this.artist = artist;
         this.eventDate = eventDate;
         this.tour = tour;
@@ -40,8 +41,8 @@ public class Event {
         return tracksNames;
     }
 
-    public Iterable<Track> getTracks(){
-        return tracks;
+    public Stream<Track> getTracks(){
+        return tracks.get();
     }
 
     public String getSetlistId(){
@@ -57,7 +58,7 @@ public class Event {
         sb.append("', tour='");
         sb.append(tour);
         sb.append("', tracks=[");
-        tracks.forEach(sb::append);
+        tracks.get().forEach(sb::append);
         sb.append("], setId='");
         sb.append(setId);
         sb.append("'}");
