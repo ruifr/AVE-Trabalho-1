@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3216ca-af49-4bf7-85cd-695617316490" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/CachedHttpRequest.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/Cache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" afterPath="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/app/src/main/java/App.java" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/app/src/main/java/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java" />
     </list>
@@ -78,13 +74,14 @@
       <file leaf-file-name="LazyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+            <state relative-caret-position="425">
+              <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
               <folding>
                 <element signature="method#searchVenuesLazyTest#0;class#LazyTest#0" expanded="false" />
                 <element signature="method#getEventsLazyTest#0;class#LazyTest#0" expanded="false" />
                 <element signature="method#serviceLazyTest#0;class#LazyTest#0" expanded="false" />
                 <element signature="method#serviceMemoizeLazyTest#0;class#LazyTest#0" expanded="false" />
+                <element signature="method#serviceCacheLazyTest#0;class#LazyTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1161,7 +1158,7 @@
       <workItem from="1493046825151" duration="109000" />
       <workItem from="1493572174827" duration="592000" />
       <workItem from="1495105370238" duration="5000" />
-      <workItem from="1495636174661" duration="324000" />
+      <workItem from="1495636174661" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="..">
       <created>1492617281829</created>
@@ -1213,7 +1210,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124298000" />
+    <option name="totallyTimeSpent" value="124588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1225,8 +1222,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1222" extended-state="7" />
-    <editor active="false" />
+    <frame x="-11" y="-11" width="1942" height="1222" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1248,7 +1245,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22894168" sideWeight="0.4949495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22894168" sideWeight="0.4949495" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1653,13 +1650,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+        <state relative-caret-position="425">
+          <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
           <folding>
             <element signature="method#searchVenuesLazyTest#0;class#LazyTest#0" expanded="false" />
             <element signature="method#getEventsLazyTest#0;class#LazyTest#0" expanded="false" />
             <element signature="method#serviceLazyTest#0;class#LazyTest#0" expanded="false" />
             <element signature="method#serviceMemoizeLazyTest#0;class#LazyTest#0" expanded="false" />
+            <element signature="method#serviceCacheLazyTest#0;class#LazyTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
