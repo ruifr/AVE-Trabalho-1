@@ -41,7 +41,6 @@ public class Countify {
         @Override
         public R apply(T arg) {
             count++;
-            System.out.println("c:" + count);
             return inner.apply(arg);
         }
     }

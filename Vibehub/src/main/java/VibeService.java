@@ -3,6 +3,7 @@ import api.SetlistApi;
 import api.dto.*;
 import model.*;
 import model.Venue;
+import util.Convert;
 import util.IRequest;
 
 import java.util.Spliterator;
@@ -27,34 +28,7 @@ public class VibeService {
     }
 
     public Stream<Venue> searchVenues(String query){
-        Function<VenueDto, Venue> func = this::dtoToVenue;
-        return StreamSupport.stream(new Spliterators.AbstractSpliterator<Venue>(Long.MAX_VALUE, Spliterator.ORDERED) {
-            int page = 1;
-            VenueContainerDto vcd = null;
-            VenueDto dtos[];
-            int idxDto[] = new int[] { 0 };
-            Spliterator<Venue> str;
-
-            @Override
-            public boolean tryAdvance(Consumer<? super Venue> action) {
-                if(vcd == null) {
-                    vcd = setlist.getVenueContainer(query, page++);
-                    idxDto[0] = 0;
-                    VenueDto dtos[] = vcd.getVenues();
-                    str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
-                    return tryAdvance(action);
-                }
-                if(str.tryAdvance(action::accept))
-                    return true;
-                if(vcd.isValidPage(page)) {
-                    idxDto[0] = 0;
-                    VenueDto dtos[] = vcd.getVenues();
-                    str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
-                    return tryAdvance(action);
-                }
-                return false;
-            }
-        }, false);
+        return Convert.toStream(setlist::getVenueContainer, this::dtoToVenue, query);
     }
 
     private Venue dtoToVenue(VenueDto venue) {
@@ -62,33 +36,13 @@ public class VibeService {
     }
 
     public Stream<Event> getEvents(String query) {
-        Function<EventDto, Event> func = this::dtoToEvent;
-        return StreamSupport.stream(new Spliterators.AbstractSpliterator<Event>(Long.MAX_VALUE, Spliterator.ORDERED) {
-            int page = 1;
-            EventContainerDto ecd = setlist.getEventContainer(query, page++);
-            EventDto dtos[] = ecd.getEvents();
-            int idxDto[] = new int[] { 0 };
-            Spliterator<Event> str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
-
-            @Override
-            public boolean tryAdvance(Consumer<? super Event> action) {
-                if(str.tryAdvance(action::accept))
-                    return true;
-                if(ecd.isValidPage(page)) {
-                    dtos = ecd.getEvents();
-                    idxDto[0] = 0;
-                    str = Stream.generate(() -> dtos[idxDto[0]++]).map(func).spliterator();
-                    return tryAdvance(action);
-                }
-                return false;
-            }
-        }, false);
+        return Convert.toStream(setlist::getEventContainer, this::dtoToEvent, query);
     }
 
     private Event dtoToEvent(EventDto event) {
         String[] tracksNames = event.getTracksNames();
         int i[] = new int[] { 0 };
-        Stream<String> res = Stream.generate(() -> tracksNames[i[0]++]);
+        Stream<String> res = Stream.generate(() -> tracksNames[i[0]++]).limit(tracksNames.length);
         Stream<Track> tracks = res.map(name -> getTrack(event.getArtistName(), name));
         return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, () -> tracks, event.getSetid());
     }

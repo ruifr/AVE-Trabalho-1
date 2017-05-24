@@ -54,34 +54,6 @@ public class LazyTest {
     }
 
     @Test
-    public void serviceMemoizeLazyTest() {
-        ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
-        VibeService vs = new VibeService(Cache.memoize(req)::apply);
-        vs.searchVenues("london");
-        Assert.assertEquals(1,req.getCount());
-        vs.searchVenues("lisbon");
-        Assert.assertEquals(2,req.getCount());
-        Venue v = vs.searchVenues("london").findFirst().get();
-        Assert.assertEquals(2,req.getCount());
-        vs.searchVenues("lisbon");
-        Assert.assertEquals(2,req.getCount());
-
-        v.getEvents();
-        Assert.assertEquals(3,req.getCount());
-        Event e = v.getEvents().findFirst().get();
-        Assert.assertEquals(3,req.getCount());
-
-        e.getTracks().findFirst().get();
-        Assert.assertEquals(4,req.getCount());
-        e.getArtist();
-        Assert.assertEquals(5,req.getCount());
-        e.getTracks().findFirst().get();
-        e.getArtist();
-        Assert.assertEquals(5,req.getCount());
-    }
-
-    @Test
-    @Ignore
     public void serviceCacheLazyTest() {
         /*
         ICounter<String, Iterable<String>> req = Countify.of(new FileRequest()::getContent);
@@ -108,5 +80,11 @@ public class LazyTest {
         e.getArtist();
         Assert.assertEquals(5,req.getCount());
         */
+        Assert.fail();
     }
+    /*
+    TODO: cache
+    TODO: verificar conversões em stream
+    TODO: verificar testes
+    */
 }

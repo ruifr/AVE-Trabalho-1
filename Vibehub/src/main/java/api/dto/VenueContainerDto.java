@@ -2,27 +2,10 @@ package api.dto;
 
 import api.dto.deserializer.VenueContainerDtoDeserializer;
 import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
 
 @JsonAdapter(VenueContainerDtoDeserializer.class)
-public class VenueContainerDto {
-    private int itemPerPage;
-    private int page;
-    private int total;
-    private VenueDto[] venue;
-
+public class VenueContainerDto extends ContainerDto<VenueDto> {
     public VenueContainerDto(int itemPerPage, int page, int total, VenueDto[] venue) {
-        this.itemPerPage = itemPerPage;
-        this.page = page;
-        this.total = total;
-        this.venue = venue;
-    }
-
-    public VenueDto[] getVenues() {
-        return venue;
-    }
-
-    public boolean isValidPage(int p) {
-        return p > 0 && p < (total/itemPerPage + 0.5);
+        super(itemPerPage, page, total, venue);
     }
 }

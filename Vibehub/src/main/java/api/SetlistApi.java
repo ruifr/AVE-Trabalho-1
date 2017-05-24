@@ -1,10 +1,7 @@
 package api;
 
-import api.dto.EventContainerDto;
-import api.dto.VenueContainerDto;
+import api.dto.*;
 import com.google.gson.Gson;
-import api.dto.EventDto;
-import api.dto.VenueDto;
 import com.google.gson.GsonBuilder;
 import util.HttpRequest;
 import util.IRequest;
@@ -34,12 +31,12 @@ public class SetlistApi {
         String path = SETLIST_HOST + SETLIST_VENUES + SETLIST_VENUES_ARGS;
         String url = String.format(path, cityName, p);
         Stream<String> content = req.getContent(url);
-        String s = content.reduce((v1, v2) -> v1.toString()+v2.toString()).get();
+        String s = content.reduce((v1, v2) -> v1+v2).get();
         return gson.fromJson(s, VenueContainerDto.class);
     }
 
     public VenueDto[] getVenues(String cityName, int p){
-        return getVenueContainer(cityName, p).getVenues();
+        return getVenueContainer(cityName, p).getModel();
     }
 
     public EventContainerDto getEventContainer(String id, int p){
@@ -51,6 +48,6 @@ public class SetlistApi {
     }
 
     public EventDto[] getEvents(String id, int p){
-        return getEventContainer(id, p).getEvents();
+        return getEventContainer(id, p).getModel();
     }
 }
