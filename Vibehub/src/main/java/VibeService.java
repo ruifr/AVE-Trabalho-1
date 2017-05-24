@@ -16,8 +16,8 @@ import static util.queries.LazyQueries.map;
 
 public class VibeService {
 
-    private final SetlistApi setlist;
-    private final LastfmApi lastfm;
+    protected final SetlistApi setlist;
+    protected final LastfmApi lastfm;
 
     public VibeService(SetlistApi slApi, LastfmApi lstApi) {
         this.setlist = slApi;
@@ -81,8 +81,8 @@ public class VibeService {
         return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, tracks, event.getSetid());
     }
 
-    public Artist getArtist(String s){
-        return DtoToArtist(lastfm.getArtistInfo(s));
+    public Artist getArtist(String query){
+        return DtoToArtist(lastfm.getArtistInfo(query));
     }
 
     private Artist DtoToArtist(ArtistDto artist) {

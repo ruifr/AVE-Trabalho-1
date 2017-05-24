@@ -2,6 +2,7 @@ import model.Event;
 import model.Track;
 import model.Venue;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import util.FileRequest;
 import util.ICounter;
@@ -53,7 +54,7 @@ public class LazyTest {
     @Test
     public void serviceMemoizeLazyTest() {
         ICounter<String, Iterable<String>> req = Countify.of(new FileRequest()::getContent);
-        VibeService vs = new VibeService(CachedHttpRequest.memoize(req)::apply);
+        VibeService vs = new VibeService(Cache.memoize(req)::apply);
         vs.searchVenues("london").iterator();
         Assert.assertEquals(1,req.getCount());
         vs.searchVenues("lisbon").iterator();
@@ -75,5 +76,35 @@ public class LazyTest {
         e.getTracks().iterator().next();
         e.getArtist();
         Assert.assertEquals(5,req.getCount());
+    }
+
+    @Test
+    @Ignore
+    public void serviceCacheLazyTest() {
+        /*
+        ICounter<String, Iterable<String>> req = Countify.of(new FileRequest()::getContent);
+        VibeServiceCache vs = new VibeServiceCache(req::apply);
+        vs.searchVenues("london").iterator();
+        Assert.assertEquals(1,req.getCount());
+        vs.searchVenues("lisbon").iterator();
+        Assert.assertEquals(2,req.getCount());
+        Venue v = vs.searchVenues("london").iterator().next();
+        Assert.assertEquals(2,req.getCount());
+        vs.searchVenues("lisbon").iterator();
+        Assert.assertEquals(2,req.getCount());
+
+        v.getEvents().iterator();
+        Assert.assertEquals(3,req.getCount());
+        Event e = v.getEvents().iterator().next();
+        Assert.assertEquals(3,req.getCount());
+
+        e.getTracks().iterator().next();
+        Assert.assertEquals(4,req.getCount());
+        e.getArtist();
+        Assert.assertEquals(5,req.getCount());
+        e.getTracks().iterator().next();
+        e.getArtist();
+        Assert.assertEquals(5,req.getCount());
+        */
     }
 }
