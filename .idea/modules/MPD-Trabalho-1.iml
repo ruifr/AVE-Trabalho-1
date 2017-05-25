@@ -6,10 +6,13 @@
       <sourceFolder url="file://$MODULE_DIR$/../../Vibehub/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Vibehub/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../Vibehub/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Vibehub/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../Vibehub/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Vibehub/build/classes/test" />
       <excludeFolder url="file://$MODULE_DIR$/../../build" />
     </content>
+    <content url="file://$MODULE_DIR$/../../Vibehub/build/classes/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.0" level="project" />

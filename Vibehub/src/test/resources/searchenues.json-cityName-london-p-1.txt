@@ -2,46 +2,8 @@
  "venues":{
   "@itemsPerPage":"30",
   "@page":"1",
-  "@total":"2790",
+  "@total":"2850",
   "venue":[
-   {
-    "@id":"6bd79276",
-    "@name":"U.S. Embassy",
-    "city":{
-     "@id":"2643743",
-     "@name":"London",
-     "@state":"England",
-     "@stateCode":"ENG",
-     "coords":{
-      "@lat":"51.5084152563931",
-      "@long":"-0.125532746315002"
-     },
-     "country":{
-      "@code":"GB",
-      "@name":"United Kingdom"
-     }
-    },
-    "url":"http:\/\/www.setlist.fm\/venue\/us-embassy-london-england-6bd79276.html"
-   },
-   {
-    "@id":"7bd47a3c",
-    "@name":"The Fleadh",
-    "city":{
-     "@id":"2643743",
-     "@name":"London",
-     "@state":"England",
-     "@stateCode":"ENG",
-     "coords":{
-      "@lat":"51.5084152563931",
-      "@long":"-0.125532746315002"
-     },
-     "country":{
-      "@code":"GB",
-      "@name":"United Kingdom"
-     }
-    },
-    "url":"http:\/\/www.setlist.fm\/venue\/the-fleadh-london-england-7bd47a3c.html"
-   },
    {
     "@id":"2bd77816",
     "@name":"2KHz at Church Studios",
@@ -573,6 +535,44 @@
      }
     },
     "url":"http:\/\/www.setlist.fm\/venue\/nog-gallery-london-england-7bd5b604.html"
+   },
+   {
+    "@id":"2bd5bce6",
+    "@name":"Effra Social",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/effra-social-london-england-2bd5bce6.html"
+   },
+   {
+    "@id":"53d5bf75",
+    "@name":"Camden Town Plaza",
+    "city":{
+     "@id":"2643743",
+     "@name":"London",
+     "@state":"England",
+     "@stateCode":"ENG",
+     "coords":{
+      "@lat":"51.5084152563931",
+      "@long":"-0.125532746315002"
+     },
+     "country":{
+      "@code":"GB",
+      "@name":"United Kingdom"
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/venue\/camden-town-plaza-london-england-53d5bf75.html"
    }
   ]
  }

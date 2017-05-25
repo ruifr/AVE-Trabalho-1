@@ -2,12 +2,12 @@ import model.Event;
 import model.Track;
 import model.Venue;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import util.FileRequest;
 import util.ICounter;
 import util.Countify;
 
+import java.util.Objects;
 import java.util.stream.Stream;
 
 public class LazyTest {
@@ -15,10 +15,9 @@ public class LazyTest {
     public void searchVenuesLazyTest() {
         ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
-        Assert.assertEquals(0,req.getCount());
         Stream<Venue> v = vs.searchVenues("london");
         Assert.assertEquals(0,req.getCount());
-        v.findFirst().get();
+        v.limit(2).forEach(item -> {});
         Assert.assertEquals(1,req.getCount());
     }
 
@@ -26,10 +25,9 @@ public class LazyTest {
     public void getEventsLazyTest() {
         ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
-        Assert.assertEquals(0,req.getCount());
         Stream<Event> e = vs.getEvents("33d4a8c9");
         Assert.assertEquals(0,req.getCount());
-        e.findFirst().get();
+        e.findFirst().ifPresent(item -> {});
         Assert.assertEquals(1,req.getCount());
     }
 
@@ -47,7 +45,7 @@ public class LazyTest {
         Assert.assertEquals(2,req.getCount());
         Stream<Track> tIter = e.getTracks();
         Assert.assertEquals(2,req.getCount());
-        tIter.findFirst().get();
+        tIter.filter(Objects::nonNull).findFirst().get();
         Assert.assertEquals(3,req.getCount());
         e.getArtist();
         Assert.assertEquals(4,req.getCount());

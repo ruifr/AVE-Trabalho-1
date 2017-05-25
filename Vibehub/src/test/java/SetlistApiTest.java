@@ -11,7 +11,7 @@ public class SetlistApiTest {
     @Test
     public void getVenues() {
         VenueDto actual = sl.getVenues("london", 1)[0];
-        String expected = "VenueDto{name='U.S. Embassy', id='6bd79276'}";
+        String expected = "VenueDto{name='2KHz at Church Studios', id='2bd77816'}";
         Assert.assertEquals(actual.toString(), expected);
     }
 
@@ -19,19 +19,19 @@ public class SetlistApiTest {
     public void getEvents() {
         EventDto[] actual = sl.getEvents("33d4a8c9", 1);
         String expected1 = "EventDto{" +
+                "setid='73e7a601', " +
+                "mbid='b7d92248-97e3-4450-8057-6fe06738f735', " +
+                "artistName='Shawn Mendes', " +
+                "eventDate='10-05-2017', " +
+                "tour='Illuminate World Tour', " +
+                "tracks=[]}";
+        Assert.assertEquals(actual[0].toString(), expected1);
+        String expected2 = "EventDto{" +
                 "setid='be6319e', " +
                 "mbid='e43f8c07-2d2e-47fd-8279-dc0e9880882c', " +
                 "artistName='Roberto Carlos', " +
                 "eventDate='19-04-2017', " +
                 "tour='Resource Not Found', " +
-                "tracks=[]}";
-        Assert.assertEquals(actual[0].toString(), expected1);
-        String expected2 = "EventDto{" +
-                "setid='be68586', " +
-                "mbid='d02dd67e-f655-4600-bc47-f789f59e7367', " +
-                "artistName='Anderson .Paak', " +
-                "eventDate='04-04-2017', " +
-                "tour='24K Magic World Tour', " +
                 "tracks=[]}";
         Assert.assertEquals(actual[2].toString(), expected2);
     }

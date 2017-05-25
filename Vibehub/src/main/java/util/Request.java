@@ -20,8 +20,6 @@ public class Request implements IRequest {
 
     @Override
     public final Stream<String> getContent(String path) {
-        Spliterator<String> iter = new IteratorFromReader(getStream.apply(path));
-        return StreamSupport.stream(iter, false);
+        return new IteratorFromReader(getStream.apply(path)).reader.lines();
     }
-
 }

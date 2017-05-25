@@ -2,8 +2,78 @@
  "setlists":{
   "@itemsPerPage":"20",
   "@page":"1",
-  "@total":"85",
+  "@total":"88",
   "setlist":[
+   {
+    "@eventDate":"10-05-2017",
+    "@id":"73e7a601",
+    "@lastUpdated":"2017-05-09T00:19:08.000+0000",
+    "@tour":"Illuminate World Tour",
+    "@versionId":"335aa05d",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"b7d92248-97e3-4450-8057-6fe06738f735",
+     "@name":"Shawn Mendes",
+     "@sortName":"Mendes, Shawn",
+     "url":"http:\/\/www.setlist.fm\/setlists\/shawn-mendes-73d8c239.html"
+    },
+    "venue":{
+     "@id":"33d4a8c9",
+     "@name":"MEO Arena",
+     "city":{
+      "@id":"2267057",
+      "@name":"Lisbon",
+      "@state":"Lisbon",
+      "@stateCode":"14",
+      "coords":{
+       "@lat":"38.7166667",
+       "@long":"-9.1333333"
+      },
+      "country":{
+       "@code":"PT",
+       "@name":"Portugal"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/meo-arena-lisbon-portugal-33d4a8c9.html"
+    },
+    "sets":"",
+    "url":"http:\/\/www.setlist.fm\/setlist\/shawn-mendes\/2017\/meo-arena-lisbon-portugal-73e7a601.html"
+   },
+   {
+    "@eventDate":"21-04-2017",
+    "@id":"5be67ffc",
+    "@lastUpdated":"2017-04-27T07:19:48.000+0000",
+    "@versionId":"635d86c7",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"e43f8c07-2d2e-47fd-8279-dc0e9880882c",
+     "@name":"Roberto Carlos",
+     "@sortName":"Carlos, Roberto",
+     "@tmid":"1224369",
+     "url":"http:\/\/www.setlist.fm\/setlists\/roberto-carlos-6bd4b21a.html"
+    },
+    "venue":{
+     "@id":"33d4a8c9",
+     "@name":"MEO Arena",
+     "city":{
+      "@id":"2267057",
+      "@name":"Lisbon",
+      "@state":"Lisbon",
+      "@stateCode":"14",
+      "coords":{
+       "@lat":"38.7166667",
+       "@long":"-9.1333333"
+      },
+      "country":{
+       "@code":"PT",
+       "@name":"Portugal"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/meo-arena-lisbon-portugal-33d4a8c9.html"
+    },
+    "sets":"",
+    "url":"http:\/\/www.setlist.fm\/setlist\/roberto-carlos\/2017\/meo-arena-lisbon-portugal-5be67ffc.html"
+   },
    {
     "@eventDate":"19-04-2017",
     "@id":"be6319e",
@@ -224,9 +294,8 @@
    {
     "@eventDate":"04-04-2017",
     "@id":"be68586",
-    "@lastUpdated":"2017-04-06T14:35:34.000+0000",
-    "@tour":"24K Magic World Tour",
-    "@versionId":"735f4a65",
+    "@lastUpdated":"2017-05-07T18:11:52.000+0000",
+    "@versionId":"1b5abd54",
     "artist":{
      "@disambiguation":"",
      "@mbid":"d02dd67e-f655-4600-bc47-f789f59e7367",
@@ -393,6 +462,121 @@
      ]
     },
     "url":"http:\/\/www.setlist.fm\/setlist\/elton-john\/2016\/meo-arena-lisbon-portugal-43fbd3db.html"
+   },
+   {
+    "@eventDate":"10-12-2016",
+    "@id":"13e7cdc5",
+    "@lastUpdated":"2017-05-21T22:46:11.000+0000",
+    "@versionId":"235a5017",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"5f264b87-d5f6-487d-aa3e-ae4c5f0c6fc9",
+     "@name":"Charles Aznavour",
+     "@sortName":"Aznavour, Charles",
+     "@tmid":"750650",
+     "url":"http:\/\/www.setlist.fm\/setlists\/charles-aznavour-4bd6b7fe.html"
+    },
+    "venue":{
+     "@id":"33d4a8c9",
+     "@name":"MEO Arena",
+     "city":{
+      "@id":"2267057",
+      "@name":"Lisbon",
+      "@state":"Lisbon",
+      "@stateCode":"14",
+      "coords":{
+       "@lat":"38.7166667",
+       "@long":"-9.1333333"
+      },
+      "country":{
+       "@code":"PT",
+       "@name":"Portugal"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/meo-arena-lisbon-portugal-33d4a8c9.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"Les Émigrants"
+       },
+       {
+        "@name":"Je n'ai pas vu le temps passer"
+       },
+       {
+        "@name":"Viens m'emporter"
+       },
+       {
+        "@name":"Paris au mois d'août"
+       },
+       {
+        "@name":"La vie est faite de hasard"
+       },
+       {
+        "@name":"Mourir d'aimer"
+       },
+       {
+        "@name":"Je voyage"
+       },
+       {
+        "@name":"Sa jeunesse"
+       },
+       {
+        "@name":"Mon ami, mon Judas"
+       },
+       {
+        "@name":"Avec un brin de nostalgie"
+       },
+       {
+        "@name":"T'espero"
+       },
+       {
+        "@name":"Il faut savoir"
+       },
+       {
+        "@name":"Lisboa"
+       },
+       {
+        "@name":"Desormais"
+       },
+       {
+        "@name":"Parce que"
+       },
+       {
+        "@name":"Ave Maria"
+       },
+       {
+        "@name":"She"
+       },
+       {
+        "@name":"Mes emmerdes"
+       },
+       {
+        "@name":"Hier encore"
+       },
+       {
+        "@name":"Les Plaisirs démodés"
+       },
+       {
+        "@name":"Comme ils disent"
+       },
+       {
+        "@name":"Présentation des musiciens"
+       },
+       {
+        "@name":"Les deux guitares"
+       },
+       {
+        "@name":"La bohème"
+       },
+       {
+        "@name":"Emmenez moi"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/charles-aznavour\/2016\/meo-arena-lisbon-portugal-13e7cdc5.html"
    },
    {
     "@eventDate":"04-12-2016",
@@ -1245,9 +1429,9 @@
    {
     "@eventDate":"06-07-2016",
     "@id":"3fff51b",
-    "@lastUpdated":"2016-07-10T15:51:25.000+0000",
+    "@lastUpdated":"2017-04-30T16:44:27.000+0000",
     "@tour":"Rod Stewart: The Hits",
-    "@versionId":"6baf667a",
+    "@versionId":"235d3c5b",
     "artist":{
      "@disambiguation":"",
      "@mbid":"a35237a0-4f47-40a6-b6f3-1e786db23402",
@@ -1388,12 +1572,11 @@
         {
          "@name":"The First Cut Is the Deepest",
          "cover":{
-          "@disambiguation":"",
-          "@mbid":"5adb8b74-54b8-4700-836e-550b6a2a2f71",
+          "@disambiguation":"now known as Yusuf Islam",
+          "@mbid":"e2345fdf-2be7-47c5-a6dd-be64353ad134",
           "@name":"Cat Stevens",
           "@sortName":"Stevens, Cat",
-          "@tmid":"1443362",
-          "url":"http:\/\/www.setlist.fm\/setlists\/cat-stevens-43d6e3af.html"
+          "url":"http:\/\/www.setlist.fm\/setlists\/cat-stevens-33c6d855.html"
          }
         },
         {
@@ -1863,327 +2046,6 @@
      }
     },
     "url":"http:\/\/www.setlist.fm\/setlist\/de-staat\/2016\/meo-arena-lisbon-portugal-53f117fd.html"
-   },
-   {
-    "@eventDate":"03-05-2016",
-    "@id":"4bf117fe",
-    "@lastUpdated":"2016-05-04T17:56:46.000+0000",
-    "@tour":"Drones World Tour",
-    "@versionId":"2ba37866",
-    "artist":{
-     "@disambiguation":"UK rock band",
-     "@mbid":"9c9f1380-2516-4fc9-a3e6-f9f61941d090",
-     "@name":"Muse",
-     "@sortName":"Muse",
-     "@tmid":"1400322",
-     "url":"http:\/\/www.setlist.fm\/setlists\/muse-53d6ebd5.html"
-    },
-    "venue":{
-     "@id":"33d4a8c9",
-     "@name":"MEO Arena",
-     "city":{
-      "@id":"2267057",
-      "@name":"Lisbon",
-      "@state":"Lisbon",
-      "@stateCode":"14",
-      "coords":{
-       "@lat":"38.7166667",
-       "@long":"-9.1333333"
-      },
-      "country":{
-       "@code":"PT",
-       "@name":"Portugal"
-      }
-     },
-     "url":"http:\/\/www.setlist.fm\/venue\/meo-arena-lisbon-portugal-33d4a8c9.html"
-    },
-    "sets":{
-     "set":[
-      {
-       "song":[
-        {
-         "@name":"Drones",
-         "@tape":"true"
-        },
-        {
-         "@name":"Psycho"
-        },
-        {
-         "@name":"Reapers"
-        },
-        {
-         "@name":"Resistance"
-        },
-        {
-         "@name":"Dead Inside"
-        },
-        {
-         "@name":"Bliss"
-        },
-        {
-         "@name":"The 2nd Law: Isolated System",
-         "info":"Shortened"
-        },
-        {
-         "@name":"The Handler"
-        },
-        {
-         "@name":"Supermassive Black Hole",
-         "info":"The Jimi Hendrix Experience's 'Voodoo Child' intro"
-        },
-        {
-         "@name":"Prelude"
-        },
-        {
-         "@name":"Starlight"
-        },
-        {
-         "@name":"Citizen Erased"
-        },
-        {
-         "@name":"Munich Jam",
-         "info":"Fast ending"
-        },
-        {
-         "@name":"Madness"
-        },
-        {
-         "@name":"Undisclosed Desires"
-        },
-        {
-         "@name":"[JFK]",
-         "@tape":"true"
-        },
-        {
-         "@name":"Stockholm Syndrome",
-         "info":"Rage Against The Machine's 'Township Rebellion' riff + 'Execution Commentary' riff outro"
-        },
-        {
-         "@name":"Time Is Running Out"
-        },
-        {
-         "@name":"Uprising",
-         "info":"Extended outro"
-        },
-        {
-         "@name":"The Globalist"
-        },
-        {
-         "@name":"Drones",
-         "@tape":"true",
-         "info":"Reprise"
-        }
-       ]
-      },
-      {
-       "@encore":"1",
-       "song":[
-        {
-         "@name":"Mercy"
-        },
-        {
-         "@name":"Knights of Cydonia",
-         "info":"Ennio Morricone's 'Man With a Harmonica' intro"
-        }
-       ]
-      }
-     ]
-    },
-    "url":"http:\/\/www.setlist.fm\/setlist\/muse\/2016\/meo-arena-lisbon-portugal-4bf117fe.html"
-   },
-   {
-    "@eventDate":"02-05-2016",
-    "@id":"33f118d1",
-    "@lastUpdated":"2016-05-04T22:13:49.000+0000",
-    "@tour":"O",
-    "@versionId":"53a37bad",
-    "artist":{
-     "@disambiguation":"",
-     "@mbid":"873ba42d-4a18-4580-8893-3f9ff7b3e282",
-     "@name":"De Staat",
-     "@sortName":"Staat, De",
-     "@tmid":"1421051",
-     "url":"http:\/\/www.setlist.fm\/setlists\/de-staat-53d773a9.html"
-    },
-    "venue":{
-     "@id":"33d4a8c9",
-     "@name":"MEO Arena",
-     "city":{
-      "@id":"2267057",
-      "@name":"Lisbon",
-      "@state":"Lisbon",
-      "@stateCode":"14",
-      "coords":{
-       "@lat":"38.7166667",
-       "@long":"-9.1333333"
-      },
-      "country":{
-       "@code":"PT",
-       "@name":"Portugal"
-      }
-     },
-     "url":"http:\/\/www.setlist.fm\/venue\/meo-arena-lisbon-portugal-33d4a8c9.html"
-    },
-    "sets":{
-     "set":{
-      "song":[
-       {
-        "@name":"Peptalk"
-       },
-       {
-        "@name":"Make The Call, Leave It All"
-       },
-       {
-        "@name":"Down Town"
-       },
-       {
-        "@name":"Get on Screen"
-       },
-       {
-        "@name":"Help Yourself"
-       },
-       {
-        "@name":"Sweatshop"
-       },
-       {
-        "@name":"Witch Doctor"
-       }
-      ]
-     }
-    },
-    "url":"http:\/\/www.setlist.fm\/setlist\/de-staat\/2016\/meo-arena-lisbon-portugal-33f118d1.html"
-   },
-   {
-    "@eventDate":"02-05-2016",
-    "@id":"2bf118d2",
-    "@lastUpdated":"2016-05-03T19:27:10.000+0000",
-    "@tour":"Drones World Tour",
-    "@versionId":"2ba3046e",
-    "artist":{
-     "@disambiguation":"UK rock band",
-     "@mbid":"9c9f1380-2516-4fc9-a3e6-f9f61941d090",
-     "@name":"Muse",
-     "@sortName":"Muse",
-     "@tmid":"1400322",
-     "url":"http:\/\/www.setlist.fm\/setlists\/muse-53d6ebd5.html"
-    },
-    "venue":{
-     "@id":"33d4a8c9",
-     "@name":"MEO Arena",
-     "city":{
-      "@id":"2267057",
-      "@name":"Lisbon",
-      "@state":"Lisbon",
-      "@stateCode":"14",
-      "coords":{
-       "@lat":"38.7166667",
-       "@long":"-9.1333333"
-      },
-      "country":{
-       "@code":"PT",
-       "@name":"Portugal"
-      }
-     },
-     "url":"http:\/\/www.setlist.fm\/venue\/meo-arena-lisbon-portugal-33d4a8c9.html"
-    },
-    "sets":{
-     "set":[
-      {
-       "song":[
-        {
-         "@name":"Drones",
-         "@tape":"true"
-        },
-        {
-         "@name":"Psycho"
-        },
-        {
-         "@name":"Reapers"
-        },
-        {
-         "@name":"Plug In Baby",
-         "info":"Extended outro"
-        },
-        {
-         "@name":"Dead Inside"
-        },
-        {
-         "@name":"The 2nd Law: Isolated System",
-         "info":"Shortened"
-        },
-        {
-         "@name":"The Handler"
-        },
-        {
-         "@name":"Supermassive Black Hole",
-         "info":"The Jimi Hendrix Experience's 'Voodoo Child' intro"
-        },
-        {
-         "@name":"Prelude"
-        },
-        {
-         "@name":"Starlight"
-        },
-        {
-         "@name":"Apocalypse Please"
-        },
-        {
-         "@name":"Munich Jam",
-         "info":"Fast ending"
-        },
-        {
-         "@name":"Madness"
-        },
-        {
-         "@name":"Map of the Problematique",
-         "info":"'Who Knows Who' riff outro"
-        },
-        {
-         "@name":"[JFK]",
-         "@tape":"true"
-        },
-        {
-         "@name":"Interlude"
-        },
-        {
-         "@name":"Hysteria",
-         "info":"'Vuilstamen' riff outro"
-        },
-        {
-         "@name":"Time Is Running Out"
-        },
-        {
-         "@name":"Uprising",
-         "info":"Extended outro"
-        },
-        {
-         "@name":"The Globalist"
-        },
-        {
-         "@name":"Drones",
-         "@tape":"true",
-         "info":"Reprise"
-        }
-       ]
-      },
-      {
-       "@encore":"1",
-       "song":[
-        {
-         "@name":"Take a Bow"
-        },
-        {
-         "@name":"Mercy"
-        },
-        {
-         "@name":"Knights of Cydonia",
-         "info":"Ennio Morricone's 'Man With a Harmonica' intro"
-        }
-       ]
-      }
-     ]
-    },
-    "url":"http:\/\/www.setlist.fm\/setlist\/muse\/2016\/meo-arena-lisbon-portugal-2bf118d2.html"
    }
   ]
  }

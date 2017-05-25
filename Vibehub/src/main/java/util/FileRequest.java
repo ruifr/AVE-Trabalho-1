@@ -17,7 +17,9 @@
 
 package util;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UncheckedIOException;
 
 /**
  * @author Miguel Gamboa
@@ -27,19 +29,24 @@ public class FileRequest extends Request {
     public FileRequest() {
         super(FileRequest::getStream);
     }
-    private static final String PATH = "C:\\Users\\Marcos\\Desktop\\MPD\\MPD-Trabalho-1\\Vibehub\\src\\test\\resources\\";
+
     public static InputStream getStream(String path) {
         String[] parts = path.split("/");
-        path = "";
-        for(int i = 3 ; i < parts.length ; i++) path+=parts[i];
-        path = path
+        path = parts[parts.length-2]
                 .replace('?', '-')
                 .replace('&', '-')
                 .replace('=', '-')
                 .replace(',', '-')
-                .substring(0, path.length());
+                .substring(0,parts[parts.length-2].length())
+                +
+                parts[parts.length-1]
+                .replace('?', '-')
+                .replace('&', '-')
+                .replace('=', '-')
+                .replace(',', '-')
+                .substring(1,parts[parts.length-1].length());
         try {
-            return new FileInputStream(PATH+path+".txt");//ClassLoader.getSystemResource(path).openStream();
+            return ClassLoader.getSystemResource(path+".txt").openStream();
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
