@@ -4,6 +4,7 @@ import model.Venue;
 import org.junit.Assert;
 import org.junit.Test;
 import util.FileRequest;
+import util.HttpRequest;
 import util.ICounter;
 import util.Countify;
 
@@ -43,42 +44,34 @@ public class LazyTest {
         Assert.assertEquals(1,req.getCount());
         Event e = eIter.findFirst().get();
         Assert.assertEquals(2,req.getCount());
-        Stream<Track> tIter = e.getTracks();
-        Assert.assertEquals(2,req.getCount());
-        tIter.filter(Objects::nonNull).findFirst().get();
-        Assert.assertEquals(3,req.getCount());
         e.getArtist();
-        Assert.assertEquals(4,req.getCount());
+        Assert.assertEquals(3,req.getCount());
     }
 
     @Test
     public void serviceCacheLazyTest() {
-        /*
-        ICounter<String, Iterable<String>> req = Countify.of(new FileRequest()::getContent);
-        VibeServiceCache vs = new VibeServiceCache(req::apply);
-        vs.searchVenues("london").iterator();
+        ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
+        VibeService vs = new VibeService(req::apply);
+
+        Venue vlo1 = vs.searchVenues("london").findFirst().get();
         Assert.assertEquals(1,req.getCount());
-        vs.searchVenues("lisbon").iterator();
+        Venue vli1 = vs.searchVenues("lisbon").findFirst().get();
         Assert.assertEquals(2,req.getCount());
-        Venue v = vs.searchVenues("london").iterator().next();
+        Venue vlo2 = vs.searchVenues("london").findFirst().get();
         Assert.assertEquals(2,req.getCount());
-        vs.searchVenues("lisbon").iterator();
+        Venue vli2 = vs.searchVenues("lisbon").findFirst().get();
         Assert.assertEquals(2,req.getCount());
 
-        v.getEvents().iterator();
-        Assert.assertEquals(3,req.getCount());
-        Event e = v.getEvents().iterator().next();
-        Assert.assertEquals(3,req.getCount());
+        Stream<Venue> str = vs.searchVenues("london");
+        str.limit(3).forEach(item -> System.out.println(item.getName()));
 
-        e.getTracks().iterator().next();
-        Assert.assertEquals(4,req.getCount());
-        e.getArtist();
-        Assert.assertEquals(5,req.getCount());
-        e.getTracks().iterator().next();
-        e.getArtist();
-        Assert.assertEquals(5,req.getCount());
-        */
-        Assert.fail();
+        Assert.assertTrue(vlo1 == vlo2);
+        Assert.assertTrue(vli1 == vli2);
+
+        Event eli1 = vli1.getEvents().findFirst().get();
+        Event eli2 = vs.getEvents("13d67585").findFirst().get();
+
+        Assert.assertTrue(eli1 == eli2);
     }
     /*
     TODO: cache

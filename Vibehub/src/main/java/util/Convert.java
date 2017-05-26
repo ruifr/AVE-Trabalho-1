@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static java.util.stream.StreamSupport.stream;
 
 public class Convert {
-    public static <T,R> Stream<R> toStream(BiFunction<String, Integer, ContainerDto<T>> gcdSup, Function<T,R> func, String query) {
+    public static <T,R> Stream<R> toStream(BiFunction<String, Integer, ContainerDto<T>> gcdSup, Function<T,R> func, String query, Consumer<R> add) {
         return stream(new Spliterators.AbstractSpliterator<R>(Long.MAX_VALUE, Spliterator.ORDERED) {
             int page = 1;
             ContainerDto gcd;
@@ -26,7 +26,7 @@ public class Convert {
                     str = Stream.generate(() -> dtos[idxDto[0]++]).limit(dtos.length).map(func).spliterator();
                     return tryAdvance(action);
                 }
-                if(str.tryAdvance(action::accept))
+                if(str.tryAdvance(item -> { add.accept(item); action.accept(item);}))
                     return true;
                 if(gcd.isValidPage(page)) {
                     idxDto[0] = 0;
