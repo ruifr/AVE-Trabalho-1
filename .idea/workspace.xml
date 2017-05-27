@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c3216ca-af49-4bf7-85cd-695617316490" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/CacheStream.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/util/Convert.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/util/Convert.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/util/Convert.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" afterPath="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" afterPath="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java" afterPath="$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/app/src/main/java/App.java" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/app/src/main/java/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java" afterPath="$PROJECT_DIR$/../mpd-2017-i41d/aula16-cache/src/test/java/WeatherDomainTest.java" />
     </list>
@@ -76,39 +79,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="VibeService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VibeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+            <state relative-caret-position="-534">
+              <caret line="35" column="42" lean-forward="false" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
               <folding>
-                <element signature="method#VibeService#0;class#VibeService#0" expanded="false" />
-                <element signature="method#DtoToArtist#0;class#VibeService#0" expanded="false" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LazyTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LazyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <element signature="method#getEventsLazyTest#0;class#LazyTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/FileRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="747">
+              <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -483,7 +476,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/VenueContainerDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/EventContainerDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ImageDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/TrackDto.java" />
@@ -507,13 +499,11 @@
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/LastfmApi.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/Countify.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/Cache.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/ContainerDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/EventContainerDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/VenueContainerDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/ContainerDto.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/ArrayToStream.java" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/dto/deserializer/TrackDtoDeserializer.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/Request.java" />
         <option value="$PROJECT_DIR$/Vibehub.iml" />
@@ -529,11 +519,14 @@
         <option value="$PROJECT_DIR$/Vibehub/src/test/java/SetlistApiTest.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/2bd77816etlists.json-p-1.txt" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/2.0method-artist.getinfo-format-json-mbid-12489976-a7e4-4fa0-a37a-8e8ac09e4047-api_key-1e36f8968af975f197cf0502a2cad082.txt" />
-        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/Convert.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/searchenues.json-cityName-lisbon-p-1.txt" />
         <option value="$PROJECT_DIR$/Vibehub/src/test/resources/13d67585etlists.json-p-1.txt" />
-        <option value="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/Convert.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/main/java/util/CacheStream.java" />
         <option value="$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java" />
+        <option value="$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java" />
       </list>
     </option>
   </component>
@@ -580,6 +573,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPD-Trabalho-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MPD-Trabalho-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="ProjectPane">
@@ -613,10 +620,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -663,10 +666,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -679,58 +678,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Vibehub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vibehub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPD-Trabalho-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vibehub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -782,7 +729,7 @@
       <recent name="api.dto.deserializer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LazyTest.serviceCacheLazyTest">
+  <component name="RunManager" selected="JUnit.All in MPD-Trabalho-1">
     <configuration default="false" name="Vibehub" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MPD-Trabalho-1" />
@@ -1286,10 +1233,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LazyTest.serviceCacheLazyTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LazyTest.serviceLazyTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LazyTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in MPD-Trabalho-1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in MPD-Trabalho-1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LazyTest.serviceCacheLazyTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LazyTest.serviceLazyTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LazyTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.Vibehub" />
       </list>
     </recent_temporary>
@@ -1320,7 +1267,7 @@
       <workItem from="1495105370238" duration="5000" />
       <workItem from="1495636174661" duration="13136000" />
       <workItem from="1495649528037" duration="10018000" />
-      <workItem from="1495665527763" duration="19544000" />
+      <workItem from="1495665527763" duration="29554000" />
     </task>
     <task id="LOCAL-00001" summary="..">
       <created>1492617281829</created>
@@ -1340,39 +1287,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 52m 07s.xml">
+    <history-entry file="All_in_MPD-Trabalho-1 - 2017.05.27 at 18h 42m 18s.xml">
+      <configuration name="All in MPD-Trabalho-1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MPD-Trabalho-1 - 2017.05.27 at 18h 59m 36s.xml">
+      <configuration name="All in MPD-Trabalho-1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MPD-Trabalho-1 - 2017.05.27 at 19h 01m 34s.xml">
+      <configuration name="All in MPD-Trabalho-1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.27 at 18h 36m 18s.xml">
       <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 52m 25s.xml">
+    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.27 at 18h 37m 59s.xml">
       <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 52m 48s.xml">
+    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.27 at 18h 40m 56s.xml">
       <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 53m 59s.xml">
+    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.27 at 18h 41m 03s.xml">
       <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 54m 44s.xml">
+    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.27 at 18h 41m 26s.xml">
       <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 55m 08s.xml">
+    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.27 at 18h 41m 41s.xml">
       <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 55m 12s.xml">
-      <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 19h 59m 02s.xml">
-      <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 20h 01m 51s.xml">
-      <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.26 at 20h 05m 16s.xml">
+    <history-entry file="LazyTest_serviceCacheLazyTest - 2017.05.27 at 19h 00m 53s.xml">
       <configuration name="LazyTest.serviceCacheLazyTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166672000" />
+    <option name="totallyTimeSpent" value="176682000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1384,7 +1331,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1222" extended-state="7" />
+    <frame x="-11" y="-11" width="1942" height="1222" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1410,7 +1357,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2138229" sideWeight="0.5050505" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32615083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32615083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1452,26 +1399,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="275" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="278" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="284" />
+      <option name="time" value="300" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="ClassLoader.getSystemResource(path+&quot;.txt&quot;).openStream()" language="JAVA" />
-        <watch expression="parts[parts.length-2] +&quot;/&quot;+parts[parts.length-1]" language="JAVA" />
+        <watch expression="vli1.getEvents().findFirst().get()" language="JAVA" />
       </configuration>
       <configuration name="Application">
         <watch expression="a.getBio()" language="JAVA" />
@@ -1759,16 +1691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-          <folding>
-            <element signature="method#nextPageTest#0;class#Vibehub#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vibehub/src/test/resources/2.0method-artist.getinfo-format-json-mbid-12489976-a7e4-4fa0-a37a-8e8ac09e4047-api_key-1e36f8968af975f197cf0502a2cad082.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1797,22 +1719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/Convert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1859,6 +1765,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/FileRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1869,21 +1783,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Optional.java">
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/api/SetlistApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="method#getEventsLazyTest#0;class#LazyTest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1895,14 +1799,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/util/CacheStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="method#CacheStream#0;class#CacheStream#0" expanded="false" />
+            <element signature="method#toStream#0;class#CacheStream#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/Vibehub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vibehub/src/main/java/VibeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="-534">
+          <caret line="35" column="42" lean-forward="false" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
           <folding>
-            <element signature="method#VibeService#0;class#VibeService#0" expanded="false" />
-            <element signature="method#DtoToArtist#0;class#VibeService#0" expanded="false" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vibehub/src/test/java/LazyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

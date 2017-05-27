@@ -9,6 +9,7 @@ import util.ICounter;
 import util.Countify;
 
 import java.util.Objects;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 public class LazyTest {
@@ -16,9 +17,8 @@ public class LazyTest {
     public void searchVenuesLazyTest() {
         ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
-        Stream<Venue> v = vs.searchVenues("london");
         Assert.assertEquals(0,req.getCount());
-        v.limit(2).forEach(item -> {});
+        vs.searchVenues("london").get().limit(2).forEach(item -> {});
         Assert.assertEquals(1,req.getCount());
     }
 
@@ -26,9 +26,8 @@ public class LazyTest {
     public void getEventsLazyTest() {
         ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
-        Stream<Event> e = vs.getEvents("33d4a8c9");
         Assert.assertEquals(0,req.getCount());
-        e.findFirst().ifPresent(item -> {});
+        vs.getEvents("33d4a8c9").get().findFirst().ifPresent(item -> {});
         Assert.assertEquals(1,req.getCount());
     }
 
@@ -36,9 +35,9 @@ public class LazyTest {
     public void serviceLazyTest() {
         ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
-        Stream<Venue> vIter = vs.searchVenues("london");
+        Supplier<Stream<Venue>> vIter = vs.searchVenues("london");
         Assert.assertEquals(0,req.getCount());
-        Venue v = vIter.findFirst().get();
+        Venue v = vIter.get().findFirst().get();
         Assert.assertEquals(1,req.getCount());
         Stream<Event> eIter = v.getEvents();
         Assert.assertEquals(1,req.getCount());
@@ -50,32 +49,29 @@ public class LazyTest {
 
     @Test
     public void serviceCacheLazyTest() {
-        ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
+        ICounter<String, Stream<String>> req = Countify.of(new HttpRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
-
-        Venue vlo1 = vs.searchVenues("london").findFirst().get();
+        Supplier<Stream<Venue>> vSupp = vs.searchVenues("london");
+        Venue vlo1 = vSupp.get().findFirst().get();
         Assert.assertEquals(1,req.getCount());
-        Venue vli1 = vs.searchVenues("lisbon").findFirst().get();
+        Venue vli1 = vs.searchVenues("lisbon").get().findFirst().get();
         Assert.assertEquals(2,req.getCount());
-        Venue vlo2 = vs.searchVenues("london").findFirst().get();
+        Venue vlo2 = vSupp.get().findFirst().get();
         Assert.assertEquals(2,req.getCount());
-        Venue vli2 = vs.searchVenues("lisbon").findFirst().get();
+        Venue vli2 = vs.searchVenues("lisbon").get().findFirst().get();
         Assert.assertEquals(2,req.getCount());
 
-        Stream<Venue> str = vs.searchVenues("london");
-        str.limit(3).forEach(item -> System.out.println(item.getName()));
+        vSupp.get().limit(3).forEach(item -> {});
+
+        Assert.assertEquals(3,req.getCount());
 
         Assert.assertTrue(vlo1 == vlo2);
         Assert.assertTrue(vli1 == vli2);
 
         Event eli1 = vli1.getEvents().findFirst().get();
-        Event eli2 = vs.getEvents("13d67585").findFirst().get();
+        Event eli2 = vs.getEvents("13d67585").get().findFirst().get();
 
         Assert.assertTrue(eli1 == eli2);
+        Assert.assertEquals(4,req.getCount());
     }
-    /*
-    TODO: cache
-    TODO: verificar conversões em stream
-    TODO: verificar testes
-    */
 }

@@ -43,7 +43,7 @@ public class SetlistApi {
         String path = SETLIST_HOST + SETLIST_EVENTS;
         String url = String.format(path, id, p);
         Stream<String> content = req.getContent(url);
-        String s = content.reduce((v1, v2) -> v1.toString()+v2.toString()).get();
+        String s = content.reduce((v1, v2) -> v1+v2).get();
         return gson.fromJson(s, EventContainerDto.class);
     }
 
