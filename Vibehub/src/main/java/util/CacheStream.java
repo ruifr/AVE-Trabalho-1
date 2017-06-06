@@ -1,15 +1,7 @@
 package util;
 
-import api.dto.ContainerDto;
-
-import java.util.*;
-import java.util.function.*;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-
-import static java.util.stream.StreamSupport.stream;
-
 public class CacheStream<T,R> {
+    /*
     private Map<String,LinkedList<R>> map = new HashMap<>();
     private BiFunction<String, Integer, ContainerDto<T>> containerSupplier;
     private Function<T,R> dtoToModel;
@@ -86,4 +78,5 @@ public class CacheStream<T,R> {
     public static <T,R> CacheStream<T,R> from(BiFunction<String, Integer, ContainerDto<T>> containerSupplier, Function<T,R> dtoToModel) {
         return new CacheStream<>(containerSupplier, dtoToModel);
     }
+    */
 }

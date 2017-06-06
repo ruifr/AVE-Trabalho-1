@@ -19,7 +19,10 @@ repositories {
 // In this section you declare the dependencies for your productions and test code
 dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
-
+    compile group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.25'
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.5.v20170502'
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.5.v20170502'
+    compile 'org.asynchttpclient:async-http-client:2.0.32'
     // Use JUnit test framework
     //testImplementation 'junit:junit:4.12'
     compile group: 'junit', name: 'junit', version: '4.12'

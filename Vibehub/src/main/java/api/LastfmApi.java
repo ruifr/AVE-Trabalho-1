@@ -7,8 +7,7 @@ import com.google.gson.GsonBuilder;
 import util.HttpRequest;
 import util.IRequest;
 
-import java.io.FileNotFoundException;
-import java.util.stream.Stream;
+import java.util.concurrent.CompletableFuture;
 
 public class LastfmApi {
 
@@ -29,17 +28,15 @@ public class LastfmApi {
         this(new HttpRequest());
     }
 
-    public ArtistDto getArtistInfo(String mbid) {
+    public CompletableFuture<ArtistDto> getArtistInfo(String mbid) {
         String path = LASTFM_HOST + LASTFM_ARTIST_ARGS;
         String url = String.format(path, mbid, LASTFM_key);
-        Stream<String> content = req.getContent(url);
-        return gson.fromJson(content.findFirst().get(), ArtistDto.class);
+        return req.getContent(url).thenApply(s -> gson.fromJson(s.findFirst().get(), ArtistDto.class));
     }
 
-    public TrackDto getTrackInfo(String artist, String track) {
+    public CompletableFuture<TrackDto> getTrackInfo(String artist, String track) {
         String path = LASTFM_HOST + LASTFM_TRACK_ARGS;
         String url = String.format(path, track, artist, LASTFM_key).replace(' ','+');
-        Stream<String> content = req.getContent(url);
-        return gson.fromJson(content.findFirst().get(), TrackDto.class);
+        return req.getContent(url).thenApply(s -> gson.fromJson(s.findFirst().get(), TrackDto.class));
     }
 }

@@ -1,14 +1,17 @@
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import util.*;
+import util.Countify;
+import util.HttpRequest;
+import util.ICounter;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
 public class Vibehub {
     @Test
     public void nextPageTest() {
-        ICounter<String, Stream<String>> req = Countify.of(new HttpRequest()::getContent);
+        ICounter<String, CompletableFuture<Stream<String>>> req = Countify.of(new HttpRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
         final int i[] = new int[] {0}, expected[] = new int[] { 1 };
 

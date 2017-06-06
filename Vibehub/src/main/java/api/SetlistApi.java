@@ -1,13 +1,15 @@
 package api;
 
-import api.dto.*;
+import api.dto.EventContainerDto;
+import api.dto.EventDto;
+import api.dto.VenueContainerDto;
+import api.dto.VenueDto;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import util.HttpRequest;
 import util.IRequest;
 
-import java.util.function.BinaryOperator;
-import java.util.stream.Stream;
+import java.util.concurrent.CompletableFuture;
 
 public class SetlistApi {
     private static final String SETLIST_HOST = "https://api.setlist.fm";
@@ -27,27 +29,23 @@ public class SetlistApi {
         this(new HttpRequest());
     }
 
-    public VenueContainerDto getVenueContainer(String cityName, int p) {
+    public CompletableFuture<VenueContainerDto> getVenueContainer(String cityName, int p) {
         String path = SETLIST_HOST + SETLIST_VENUES + SETLIST_VENUES_ARGS;
         String url = String.format(path, cityName, p);
-        Stream<String> content = req.getContent(url);
-        String s = content.reduce((v1, v2) -> v1+v2).get();
-        return gson.fromJson(s, VenueContainerDto.class);
+        return req.getContent(url).thenApply(s -> gson.fromJson(s.reduce((v1, v2) -> v1 + v2).get(), VenueContainerDto.class));
     }
 
-    public VenueDto[] getVenues(String cityName, int p){
-        return getVenueContainer(cityName, p).getModel();
+    public CompletableFuture<VenueDto[]> getVenues(String cityName, int p){
+        return getVenueContainer(cityName, p).thenApply(VenueContainerDto::getModel);
     }
 
-    public EventContainerDto getEventContainer(String id, int p){
+    public CompletableFuture<EventContainerDto> getEventContainer(String id, int p){
         String path = SETLIST_HOST + SETLIST_EVENTS;
         String url = String.format(path, id, p);
-        Stream<String> content = req.getContent(url);
-        String s = content.reduce((v1, v2) -> v1+v2).get();
-        return gson.fromJson(s, EventContainerDto.class);
+        return req.getContent(url).thenApply(s -> gson.fromJson(s.reduce((v1, v2) -> v1 + v2).get(), EventContainerDto.class));
     }
 
-    public EventDto[] getEvents(String id, int p){
-        return getEventContainer(id, p).getModel();
+    public CompletableFuture<EventDto[]> getEvents(String id, int p){
+        return getEventContainer(id, p).thenApply(EventContainerDto::getModel);
     }
 }

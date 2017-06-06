@@ -1,21 +1,20 @@
 import model.Event;
-import model.Track;
 import model.Venue;
 import org.junit.Assert;
 import org.junit.Test;
+import util.Countify;
 import util.FileRequest;
 import util.HttpRequest;
 import util.ICounter;
-import util.Countify;
 
-import java.util.Objects;
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 public class LazyTest {
     @Test
     public void searchVenuesLazyTest() {
-        ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
+        ICounter<String, CompletableFuture<Stream<String>>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
         Assert.assertEquals(0,req.getCount());
         vs.searchVenues("london").get().limit(2).forEach(item -> {});
@@ -24,7 +23,7 @@ public class LazyTest {
 
     @Test
     public void getEventsLazyTest() {
-        ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
+        ICounter<String, CompletableFuture<Stream<String>>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
         Assert.assertEquals(0,req.getCount());
         vs.getEvents("33d4a8c9").get().findFirst().ifPresent(item -> {});
@@ -33,7 +32,7 @@ public class LazyTest {
 
     @Test
     public void serviceLazyTest() {
-        ICounter<String, Stream<String>> req = Countify.of(new FileRequest()::getContent);
+        ICounter<String, CompletableFuture<Stream<String>>> req = Countify.of(new FileRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
         Supplier<Stream<Venue>> vIter = vs.searchVenues("london");
         Assert.assertEquals(0,req.getCount());
@@ -49,7 +48,7 @@ public class LazyTest {
 
     @Test
     public void serviceCacheLazyTest() {
-        ICounter<String, Stream<String>> req = Countify.of(new HttpRequest()::getContent);
+        ICounter<String, CompletableFuture<Stream<String>>> req = Countify.of(new HttpRequest()::getContent);
         VibeService vs = new VibeService(req::apply);
         Supplier<Stream<Venue>> vSupp = vs.searchVenues("london");
         Venue vlo1 = vSupp.get().findFirst().get();

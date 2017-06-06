@@ -1,72 +1,105 @@
 import api.LastfmApi;
 import api.SetlistApi;
 import api.dto.*;
-import model.*;
+import model.Artist;
+import model.Event;
+import model.Track;
 import model.Venue;
-import util.CacheStream;
 import util.IRequest;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.LinkedList;
+import java.util.Spliterator;
+import java.util.Spliterators;
+import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-public class VibeService {
+import static java.util.stream.StreamSupport.stream;
 
+public class VibeService {
     protected final SetlistApi setlist;
     protected final LastfmApi lastfm;
 
     public VibeService(SetlistApi slApi, LastfmApi lstApi) {
         this.setlist = slApi;
         this.lastfm = lstApi;
-        vCache = CacheStream.from(setlist::getVenueContainer, this::dtoToVenue);
-        eCache = CacheStream.from(setlist::getEventContainer, this::dtoToEvent);
     }
 
     public VibeService(IRequest req) {
         this(new SetlistApi(req), new LastfmApi(req));
     }
 
-    private CacheStream vCache;
     public Supplier<Stream<Venue>> searchVenues(String query){
-        return () -> vCache.toStream(query);
+        LinkedList<Venue> l = new LinkedList<>();
+        return () -> stream(new Spliterators.AbstractSpliterator<Venue>(Long.MAX_VALUE, Spliterator.ORDERED) {
+            int page = 1;
+            CompletableFuture<VenueDto[]> dtos = setlist.getVenueContainer(query, page++).thenApply(VenueContainerDto::getModel);
+            int idxDto[] = new int[] { 0 };
+            Spliterator<Venue> str;
+
+            @Override
+            public boolean tryAdvance(Consumer<? super Venue> action) {
+                if(str == null) {
+                    VenueDto[] tmp = dtos.join();
+                    str = Stream.generate(() -> tmp[idxDto[0]++]).limit(tmp.length).map(VibeService.this::dtoToVenue).spliterator();
+                }
+                if(str.tryAdvance(item -> { l.add(item); action.accept(item);}))
+                    return true;
+
+                str = null;
+                return tryAdvance(action);
+            }
+        }, false);
+
     }
 
     private Venue dtoToVenue(VenueDto venue) {
         return new Venue(venue.getName(), getEvents(venue.getId()));
     }
 
-    private CacheStream eCache;
     public Supplier<Stream<Event>> getEvents(String query) {
-        return () -> eCache.toStream(query);
+        LinkedList<Event> l = new LinkedList<>();
+        return () -> stream(new Spliterators.AbstractSpliterator<Event>(Long.MAX_VALUE, Spliterator.ORDERED) {
+            int page = 1;
+            CompletableFuture<EventDto[]> dtos = setlist.getEventContainer(query, page++).thenApply(EventContainerDto::getModel);
+            int idxDto[] = new int[] { 0 };
+            Spliterator<Event> str;
+
+            @Override
+            public boolean tryAdvance(Consumer<? super Event> action) {
+                if(str == null) {
+                    EventDto[] tmp = dtos.join();
+                    str = Stream.generate(() -> tmp[idxDto[0]++]).limit(tmp.length).map(VibeService.this::dtoToEvent).spliterator();
+                }
+                if(str.tryAdvance(item -> { l.add(item); action.accept(item);}))
+                    return true;
+
+                str = null;
+                return tryAdvance(action);
+            }
+        }, false);
     }
 
     private Event dtoToEvent(EventDto event) {
         String[] tracksNames = event.getTracksNames();
         int i[] = new int[] { 0 };
         Stream<String> res = Stream.generate(() -> tracksNames[i[0]++]).limit(tracksNames.length);
-        Stream<Track> tracks = res.map(name -> getTrack(event.getArtistName(), name));
-        return new Event(() -> getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, () -> tracks, event.getSetid());
+        Supplier<Stream<Track>> tracks = () -> res.map(name -> getTrack(event.getArtistName(), name).join());
+        return new Event(getArtist(event.getMbid())::join, event.getEventDate(), event.getTour(), tracksNames, tracks, event.getSetid());
     }
 
-    private Map<String, Artist> aCache = new HashMap<>();
-    public Artist getArtist(String query){
-        Artist a = aCache.get(query);
-        if(a == null) a = dtoToArtist(lastfm.getArtistInfo(query));
-        else aCache.put(query, a);
-        return a;
+
+    public CompletableFuture<Artist> getArtist(String query){
+        return lastfm.getArtistInfo(query).thenApply(this::dtoToArtist);
     }
 
     private Artist dtoToArtist(ArtistDto artist) {
         return artist == null ? null : new Artist(artist.getName(), artist.getBio(), artist.getUrl(), artist.getImagesUri(), artist.getMbid());
     }
 
-    private Map<String, Track> tCache = new HashMap<>();
-    public Track getTrack(String artist, String trackName){
-        Track t = tCache.get(artist+trackName);
-        if(t == null) dtoToTrack(lastfm.getTrackInfo(artist, trackName));
-        else tCache.put(artist+trackName,t);
-        return t;
+    public CompletableFuture<Track> getTrack(String artist, String trackName){
+        return lastfm.getTrackInfo(artist, trackName).thenApply(this::dtoToTrack);
     }
 
     private Track dtoToTrack(TrackDto track) {

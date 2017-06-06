@@ -10,14 +10,14 @@ public class SetlistApiTest {
 
     @Test
     public void getVenues() {
-        VenueDto actual = sl.getVenues("london", 1)[0];
+        VenueDto actual = sl.getVenues("london", 1).join()[0];
         String expected = "VenueDto{name='2KHz at Church Studios', id='2bd77816'}";
         Assert.assertEquals(actual.toString(), expected);
     }
 
     @Test
     public void getEvents() {
-        EventDto[] actual = sl.getEvents("33d4a8c9", 1);
+        EventDto[] actual = sl.getEvents("33d4a8c9", 1).join();
         String expected1 = "EventDto{" +
                 "setid='73e7a601', " +
                 "mbid='b7d92248-97e3-4450-8057-6fe06738f735', " +
