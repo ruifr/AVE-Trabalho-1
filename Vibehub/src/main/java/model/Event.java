@@ -1,18 +1,20 @@
 package model;
 
+import java.util.Arrays;
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 public class Event {
-    private final Supplier<Artist> artist;
+    private final CompletableFuture<Artist> artist;
     private Artist artistVal;
     private final String eventDate;
     private final String tour;
     private final String[] tracksNames;
-    private final Supplier<Stream<Track>> tracks;
+    private final CompletableFuture<Track>[] tracks;
     private final String setId;
 
-    public Event(Supplier<Artist> artist, String eventDate, String tour, String[] tracksNames, Supplier<Stream<Track>> tracks, String setId) {
+    public Event(CompletableFuture<Artist> artist, String eventDate, String tour, String[] tracksNames, CompletableFuture<Track>[] tracks, String setId) {
         this.artist = artist;
         this.eventDate = eventDate;
         this.tour = tour;
@@ -22,7 +24,7 @@ public class Event {
     }
 
     public Artist getArtist() {
-        return artistVal == null ? artistVal=artist.get() : artistVal;
+        return artistVal == null ? artistVal=artist.join() : artistVal;
     }
 
     public String getArtistName() {
@@ -41,8 +43,8 @@ public class Event {
         return tracksNames;
     }
 
-    public Stream<Track> getTracks(){
-        return tracks.get();
+    public CompletableFuture<Track>[] getTracks(){
+        return tracks;
     }
 
     public String getSetlistId(){
@@ -58,7 +60,7 @@ public class Event {
         sb.append("', tour='");
         sb.append(tour);
         sb.append("', tracks=[");
-        tracks.get().forEach(sb::append);
+        Arrays.asList(tracks).forEach(sb::append);
         sb.append("], setId='");
         sb.append(setId);
         sb.append("'}");

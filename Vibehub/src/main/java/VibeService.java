@@ -81,12 +81,16 @@ public class VibeService {
         }, false);
     }
 
+    public CompletableFuture<Event> getEvent(String id) {
+        return setlist.getEvent(id).thenApply(this::dtoToEvent);
+    }
+
     private Event dtoToEvent(EventDto event) {
         String[] tracksNames = event.getTracksNames();
         int i[] = new int[] { 0 };
         Stream<String> res = Stream.generate(() -> tracksNames[i[0]++]).limit(tracksNames.length);
-        Supplier<Stream<Track>> tracks = () -> res.map(name -> getTrack(event.getArtistName(), name).join());
-        return new Event(getArtist(event.getMbid())::join, event.getEventDate(), event.getTour(), tracksNames, tracks, event.getSetid());
+        CompletableFuture<Track>[] tracks = (CompletableFuture<Track>[]) res.map(name -> getTrack(event.getArtistName(), name)).toArray();
+        return new Event(getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, tracks, event.getSetid());
     }
 
 
