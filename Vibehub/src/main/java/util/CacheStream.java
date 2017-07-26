@@ -1,12 +1,22 @@
 package util;
 
+import api.dto.ContainerDto;
+
+import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.stream.Stream;
+
+import static java.util.stream.StreamSupport.stream;
+
 public class CacheStream<T,R> {
-    /*
     private Map<String,LinkedList<R>> map = new HashMap<>();
-    private BiFunction<String, Integer, ContainerDto<T>> containerSupplier;
+    private BiFunction<String, Integer, CompletableFuture<ContainerDto<T>>> containerSupplier;
     private Function<T,R> dtoToModel;
 
-    private CacheStream(BiFunction<String, Integer, ContainerDto<T>> containerSupplier, Function<T,R> dtoToModel) {
+    private CacheStream(BiFunction<String, Integer, CompletableFuture<ContainerDto<T>>> containerSupplier, Function<T,R> dtoToModel) {
         this.containerSupplier = containerSupplier;
         this.dtoToModel = dtoToModel;
     }
@@ -14,34 +24,28 @@ public class CacheStream<T,R> {
     private Stream<R> toStream(String query, int sPage, Consumer<R> add) {
         return stream(new Spliterators.AbstractSpliterator<R>(Long.MAX_VALUE, Spliterator.ORDERED) {
             int page = sPage;
-            ContainerDto gcd;
-            T dtos[];
+            CompletableFuture<ContainerDto<T>> gcd = containerSupplier.apply(query, page);
             int idxDto[] = new int[] { 0 };
             Spliterator<R> str;
 
             @Override
             public boolean tryAdvance(Consumer<? super R> action) {
-                if(gcd == null) {
-                    gcd = containerSupplier.apply(query, page++);
-                    dtos = (T[])gcd.getModel();
-                    str = Stream.generate(() -> dtos[idxDto[0]++]).limit(dtos.length).map(dtoToModel).spliterator();
-                    return tryAdvance(action);
-                }
-                if(str.tryAdvance(item -> { add.accept(item); action.accept(item);}))
-                    return true;
-                if(gcd.isValidPage(page)) {
+                if(str == null) {
+                    T[] tmp = containerSupplier.apply(query, page++).thenApply(ContainerDto::getModel).join();
                     idxDto[0] = 0;
-                    dtos = containerSupplier.apply(query, page++).getModel();
-                    str = Stream.generate(() -> dtos[idxDto[0]++]).limit(dtos.length).map(dtoToModel).spliterator();
-                    return tryAdvance(action);
+                    str = Stream.generate(() -> tmp[idxDto[0]++]).limit(tmp.length).map(dtoToModel).spliterator();
+                    if(str == null) return false;
                 }
-                return false;
+                if(str.tryAdvance(item -> { add.accept(item); action.accept(item);})) return true;
+                if(!gcd.join().isValidPage(page)) return false;
+                str = null;
+                return tryAdvance(action);
             }
         }, false);
     }
 
     private Stream<R> toStream(String query, LinkedList<R> l) {
-        return StreamSupport.stream(new Spliterators.AbstractSpliterator<R>(Long.MAX_VALUE, Spliterator.ORDERED) {
+        return stream(new Spliterators.AbstractSpliterator<R>(Long.MAX_VALUE, Spliterator.ORDERED) {
             private int idx = 0;
             private boolean flag = false;
             private Spliterator<R> split;
@@ -71,12 +75,12 @@ public class CacheStream<T,R> {
             return toStream(query, l);
 
         l = new LinkedList<>();
+        Stream<R> ret = toStream(query, 1, l::add);
         map.put(query,l);
-        return toStream(query, 1, l::add);
+        return ret;
     }
 
-    public static <T,R> CacheStream<T,R> from(BiFunction<String, Integer, ContainerDto<T>> containerSupplier, Function<T,R> dtoToModel) {
+    public static <T,R> CacheStream<T,R> from(BiFunction<String, Integer, CompletableFuture<ContainerDto<T>>> containerSupplier, Function<T,R> dtoToModel) {
         return new CacheStream<>(containerSupplier, dtoToModel);
     }
-    */
 }

@@ -1,5 +1,19 @@
-public class VibeServiceCache /*extends VibeService*/ {
-/*
+import api.LastfmApi;
+import api.SetlistApi;
+import model.Artist;
+import model.Event;
+import model.Track;
+import model.Venue;
+import util.CacheStream;
+import util.IRequest;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+
+public class VibeServiceCache extends VibeService {
     public VibeServiceCache(SetlistApi slApi, LastfmApi lstApi) {
         super(slApi, lstApi);
         vCache = CacheStream.from(setlist::getVenueContainer, this::dtoToVenue);
@@ -7,7 +21,7 @@ public class VibeServiceCache /*extends VibeService*/ {
     }
 
     public VibeServiceCache(IRequest req) {
-        super(req);
+        this(new SetlistApi(req), new LastfmApi(req));
     }
 
     private CacheStream vCache;
@@ -22,22 +36,34 @@ public class VibeServiceCache /*extends VibeService*/ {
         return () -> eCache.toStream(query);
     }
 
-    private Map<String, Artist> aCache = new HashMap<>();
+    private Map<String, CompletableFuture<Artist>> aCache = new HashMap<>();
     @Override
-    public Artist getArtist(String query) {
-        Artist a = aCache.get(query);
+    public CompletableFuture<Artist> getArtist(String query) {
+        CompletableFuture<Artist> a = aCache.get(query);
         if(a == null) a = super.getArtist(query);
         else aCache.put(query, a);
         return a;
     }
 
-    private Map<String, Track> tCache = new HashMap<>();
+    private Map<String, CompletableFuture<Track>> tCache = new HashMap<>();
     @Override
-    public Track getTrack(String artist, String trackName) {
-        Track t = tCache.get(artist+trackName);
-        if(t == null) super.getTrack(artist, trackName);
+    public CompletableFuture<Track> getTrack(String artist, String trackName) {
+        CompletableFuture<Track> t = tCache.get(artist+trackName);
+        if(t == null) t = super.getTrack(artist, trackName);
         else tCache.put(artist+trackName,t);
         return t;
     }
-    */
+
+    private Map<String, CompletableFuture<Event>> sCache = new HashMap<>();
+    @Override
+    public CompletableFuture<Event> getEvent(String id) {
+        CompletableFuture<Event> e = sCache.get(id);
+        if(e == null) {
+            CompletableFuture<Event> c = new CompletableFuture<>();
+            c.complete(getEvents(id).get().filter(ev -> ev.getSetlistId().equals(id)).findFirst().get());
+            e = c;
+        }
+        else sCache.put(id, e);
+        return e;
+    }
 }

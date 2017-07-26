@@ -9,6 +9,7 @@ import java.lang.reflect.Type;
 public class VenueContainerDtoDeserializer implements JsonDeserializer<VenueContainerDto> {
     @Override
     public VenueContainerDto deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+        //if(json.isJsonPrimitive()) return new VenueContainerDto(0, 0, 0, new VenueDto[]{});
         JsonObject jo = json.getAsJsonObject().get("venues").getAsJsonObject();
         return new VenueContainerDto(
                 jo.get("@itemsPerPage").getAsJsonPrimitive().getAsInt(),

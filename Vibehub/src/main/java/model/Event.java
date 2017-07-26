@@ -24,7 +24,12 @@ public class Event {
     }
 
     public Artist getArtist() {
-        return artistVal == null ? artistVal=artist.join() : artistVal;
+        try {
+            return artistVal == null ? artist.join() == null ? new Artist("","","",new String[]{},"") : (artistVal=artist.join()) : (artistVal=artist.join());
+        }catch (Exception e) {
+            artistVal = new Artist("","","",new String[]{},"");
+            return artistVal;
+        }
     }
 
     public String getArtistName() {

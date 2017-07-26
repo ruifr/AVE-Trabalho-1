@@ -34,47 +34,48 @@ public class VibeService {
         LinkedList<Venue> l = new LinkedList<>();
         return () -> stream(new Spliterators.AbstractSpliterator<Venue>(Long.MAX_VALUE, Spliterator.ORDERED) {
             int page = 1;
-            CompletableFuture<VenueDto[]> dtos = setlist.getVenueContainer(query, page++).thenApply(VenueContainerDto::getModel);
+            CompletableFuture<ContainerDto<VenueDto>> vcd = setlist.getVenueContainer(query, page);
             int idxDto[] = new int[] { 0 };
             Spliterator<Venue> str;
 
             @Override
             public boolean tryAdvance(Consumer<? super Venue> action) {
                 if(str == null) {
-                    VenueDto[] tmp = dtos.join();
+                    VenueDto[] tmp = setlist.getVenueContainer(query, page++).thenApply(ContainerDto::getModel).join();
+                    idxDto[0] = 0;
                     str = Stream.generate(() -> tmp[idxDto[0]++]).limit(tmp.length).map(VibeService.this::dtoToVenue).spliterator();
+                    if(str == null) return false;
                 }
-                if(str.tryAdvance(item -> { l.add(item); action.accept(item);}))
-                    return true;
-
+                if(str.tryAdvance(item -> { l.add(item); action.accept(item);})) return true;
+                if(!vcd.join().isValidPage(page)) return false;
                 str = null;
                 return tryAdvance(action);
             }
         }, false);
-
     }
 
-    private Venue dtoToVenue(VenueDto venue) {
-        return new Venue(venue.getName(), getEvents(venue.getId()));
+    protected Venue dtoToVenue(VenueDto venue) {
+        return new Venue(venue.getName(), getEvents(venue.getId()), venue.getId());
     }
 
     public Supplier<Stream<Event>> getEvents(String query) {
         LinkedList<Event> l = new LinkedList<>();
         return () -> stream(new Spliterators.AbstractSpliterator<Event>(Long.MAX_VALUE, Spliterator.ORDERED) {
             int page = 1;
-            CompletableFuture<EventDto[]> dtos = setlist.getEventContainer(query, page++).thenApply(EventContainerDto::getModel);
+            CompletableFuture<ContainerDto<EventDto>> ecd = setlist.getEventContainer(query, page);
             int idxDto[] = new int[] { 0 };
             Spliterator<Event> str;
 
             @Override
             public boolean tryAdvance(Consumer<? super Event> action) {
                 if(str == null) {
-                    EventDto[] tmp = dtos.join();
+                    EventDto[] tmp = setlist.getEventContainer(query, page++).thenApply(ContainerDto::getModel).join();
+                    idxDto[0] = 0;
                     str = Stream.generate(() -> tmp[idxDto[0]++]).limit(tmp.length).map(VibeService.this::dtoToEvent).spliterator();
+                    if(str == null) return false;
                 }
-                if(str.tryAdvance(item -> { l.add(item); action.accept(item);}))
-                    return true;
-
+                if(str.tryAdvance(item -> { l.add(item); action.accept(item);})) return true;
+                if(!ecd.join().isValidPage(page)) return false;
                 str = null;
                 return tryAdvance(action);
             }
@@ -85,11 +86,13 @@ public class VibeService {
         return setlist.getEvent(id).thenApply(this::dtoToEvent);
     }
 
-    private Event dtoToEvent(EventDto event) {
+    protected Event dtoToEvent(EventDto event) {
         String[] tracksNames = event.getTracksNames();
-        int i[] = new int[] { 0 };
-        Stream<String> res = Stream.generate(() -> tracksNames[i[0]++]).limit(tracksNames.length);
-        CompletableFuture<Track>[] tracks = (CompletableFuture<Track>[]) res.map(name -> getTrack(event.getArtistName(), name)).toArray();
+        CompletableFuture<Track>[] tracks = new CompletableFuture[tracksNames.length];
+        int i[] = new int[] { 0, 0 };
+        Stream.generate(() -> tracksNames[i[0]++])
+                .limit(tracksNames.length)
+                .forEach(name -> tracks[i[1]++] = getTrack(event.getArtistName(), name));
         return new Event(getArtist(event.getMbid()), event.getEventDate(), event.getTour(), tracksNames, tracks, event.getSetid());
     }
 

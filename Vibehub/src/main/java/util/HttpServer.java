@@ -75,7 +75,7 @@ public class HttpServer {
         }
 
         @Override
-        public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, IOException {
+        public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
             Charset utf8 = Charset.forName("utf-8");
             resp.setContentType(String.format("text/html; charset=%s", utf8.name()));
 

@@ -29,24 +29,24 @@ public class SetlistApi {
         this(new HttpRequest());
     }
 
-    public CompletableFuture<VenueContainerDto> getVenueContainer(String cityName, int p) {
+    public CompletableFuture<ContainerDto<VenueDto>> getVenueContainer(String cityName, int p) {
         String path = SETLIST_HOST + SETLIST_VENUES + SETLIST_VENUES_ARGS;
         String url = String.format(path, cityName, p);
         return req.getContent(url).thenApply(s -> gson.fromJson(s.reduce((v1, v2) -> v1 + v2).get(), VenueContainerDto.class));
     }
 
     public CompletableFuture<VenueDto[]> getVenues(String cityName, int p){
-        return getVenueContainer(cityName, p).thenApply(VenueContainerDto::getModel);
+        return getVenueContainer(cityName, p).thenApply(ContainerDto::getModel);
     }
 
-    public CompletableFuture<EventContainerDto> getEventContainer(String id, int p){
+    public CompletableFuture<ContainerDto<EventDto>> getEventContainer(String id, int p){
         String path = SETLIST_HOST + SETLIST_EVENTS;
         String url = String.format(path, id, p);
         return req.getContent(url).thenApply(s -> gson.fromJson(s.reduce((v1, v2) -> v1 + v2).get(), EventContainerDto.class));
     }
 
     public CompletableFuture<EventDto[]> getEvents(String id, int p){
-        return getEventContainer(id, p).thenApply(EventContainerDto::getModel);
+        return getEventContainer(id, p).thenApply(ContainerDto::getModel);
     }
 
     public CompletableFuture<EventDto> getEvent(String id){
